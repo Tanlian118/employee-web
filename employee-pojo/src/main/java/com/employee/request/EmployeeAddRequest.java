@@ -12,6 +12,12 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class EmployeeAddRequest {
 
+
+    /**
+     * 员工Id
+     */
+    Integer employeeUserId;
+
     /**
      * 姓名
      */

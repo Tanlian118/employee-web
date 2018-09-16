@@ -29,7 +29,7 @@
     <bytecodeTargetLevel target="1.8">
       <module name="employee-pojo" target="1.8" />
       <module name="employee-publish" target="1.8" />
-      <module name="employee-web" target="1.5" />
+      <module name="employee-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

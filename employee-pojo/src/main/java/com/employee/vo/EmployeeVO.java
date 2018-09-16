@@ -1,5 +1,6 @@
 package com.employee.vo;
 
+import com.employee.common.constant.StatusCode;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
@@ -27,7 +28,7 @@ public class EmployeeVO {
     /**
      * 状态：-1/0/1 -> 删除/禁用/正常
      */
-    Integer status;
+    StatusCode status;
 
     /**
      * 更新时间

@@ -9,4 +9,8 @@
         <setting name="logImpl" value="STDOUT_LOGGING"/>
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
+
+    <typeHandlers>
+        <typeHandler handler="com.employee.common.handler.MyBatisEnumTypeHandler"/>
+    </typeHandlers>
 </configuration>

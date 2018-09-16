@@ -16,7 +16,8 @@
 
     <context:component-scan base-package="com.employee.*.controller,
                                           com.employee.*.adapter,
-                                          com.employee.*.service"/>
+                                          com.employee.*.service,
+                                          com.employee.*.advice"/>
 
     <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
     </bean>

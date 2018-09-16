@@ -33,6 +33,11 @@
     <artifactId>employee-publish</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>com.employee</groupId>
+            <artifactId>employee-pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
         <!-- Mybatis -->
         <dependency>
@@ -189,7 +194,7 @@
                 <version>9.3.8.v20160314</version>
                 <configuration>
                     <httpConnector>
-                        <port>9003</port>
+                        <port>9006</port>
                     </httpConnector>
                     <webAppConfig>
                         <contextPath>/</contextPath>
