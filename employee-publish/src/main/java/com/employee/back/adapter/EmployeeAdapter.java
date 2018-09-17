@@ -1,17 +1,18 @@
 package com.employee.back.adapter;
 
 import com.employee.back.service.EmployeeService;
+import com.employee.back.transformers.EmployeeTransformers;
 import com.employee.common.constant.FixedPageSizeEnum;
 import com.employee.common.constant.StateCode;
 import com.employee.common.converter.BaseTransformer;
 import com.employee.common.dto.PageModel;
 import com.employee.common.dto.ResultDTO;
+import com.employee.common.guava2.Lists2;
 import com.employee.dto.EmployeeDTO;
-import com.employee.param.EmployeeListParam;
+import com.employee.request.EmployeeListParam;
 import com.employee.param.EmployeeQueryParam;
 import com.employee.request.EmployeeAddRequest;
 import com.employee.vo.EmployeeVO;
-import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -73,11 +74,7 @@ public class EmployeeAdapter {
         queryParam.setPhone(listParam.getPhone());
         PageModel<EmployeeDTO> pageModel = employeeService.queryByParam(queryParam);
         List<EmployeeDTO> employeeDTOs = pageModel.getData();
-        List<EmployeeVO> employeeVOs= Lists.newArrayList();
-        for (EmployeeDTO employeeDTO : employeeDTOs) {
-            EmployeeVO employeeVO = BaseTransformer.convert(employeeDTO, new EmployeeVO());
-            employeeVOs.add(employeeVO);
-        }
+        List<EmployeeVO> employeeVOs = Lists2.transform(employeeDTOs, EmployeeTransformers.DTO_TO_VO);
         log.info("列表参数",listParam);
       return  PageModel.build(employeeVOs,pageModel.getTotalCount(), listParam.getPage(), pageSize);
     }

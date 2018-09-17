@@ -4,13 +4,21 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
+import java.util.Set;
+
 /**
  * @author Tanlian
- * @create 2018-09-15 22:50
+ * @create 2018-09-15 22:14
  **/
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class OrderProductListParam {
+public class OrderProductQueryParam extends BaseQueryParam {
+
+
+    /**
+     * 商品id
+     */
+    Set<Integer> productIds;
 
     /**
      * sku编码

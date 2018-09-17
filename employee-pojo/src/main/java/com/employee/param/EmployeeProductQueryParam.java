@@ -10,7 +10,7 @@ import lombok.experimental.FieldDefaults;
  **/
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class EmployeeProductListParam {
+public class EmployeeProductQueryParam extends BaseQueryParam {
 
     /**
      * sku编码

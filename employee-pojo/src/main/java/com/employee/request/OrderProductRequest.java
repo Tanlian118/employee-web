@@ -11,6 +11,29 @@ import lombok.experimental.FieldDefaults;
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class OrderProductRequest {
+    /**
+     * sku编码
+     */
+    String productCode;
 
+    /**
+     * 商品名称
+     */
+    String productName;
+
+    /**
+     * 副标题
+     */
+    String productSubtitle;
+
+    /**
+     * 商品主图
+     */
+    String productImage;
+
+    /**
+     * 权重
+     */
+    Integer weight;
 
 }

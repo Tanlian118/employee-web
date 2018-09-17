@@ -3,7 +3,7 @@ package com.employee.back.controller;
 import com.employee.back.adapter.EmployeeAdapter;
 import com.employee.common.dto.PageModel;
 import com.employee.common.dto.ResultDTO;
-import com.employee.param.EmployeeListParam;
+import com.employee.request.EmployeeListParam;
 import com.employee.request.EmployeeAddRequest;
 import com.employee.vo.EmployeeVO;
 import lombok.extern.slf4j.Slf4j;

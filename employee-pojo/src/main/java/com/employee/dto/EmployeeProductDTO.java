@@ -12,6 +12,11 @@ import lombok.experimental.FieldDefaults;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class EmployeeProductDTO {
 
+
+    /**
+     * 员工商品id
+     */
+    Integer employeeProductId;
     /**
      * 商品id
      */

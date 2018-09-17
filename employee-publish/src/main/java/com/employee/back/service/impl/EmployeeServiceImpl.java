@@ -2,14 +2,15 @@ package com.employee.back.service.impl;
 
 import com.employee.back.dao.EmployeeDAO;
 import com.employee.back.service.EmployeeService;
+import com.employee.back.transformers.EmployeeTransformers;
 import com.employee.common.constant.StateCode;
 import com.employee.common.converter.BaseTransformer;
 import com.employee.common.dto.PageModel;
 import com.employee.common.dto.ResultDTO;
+import com.employee.common.guava2.Lists2;
 import com.employee.dto.EmployeeDTO;
 import com.employee.entity.EmployeeEntity;
 import com.employee.param.EmployeeQueryParam;
-import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,7 +32,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public ResultDTO<Void> addOrUpdateUser(EmployeeDTO employeeDTO) {
-
         EmployeeEntity employeeEntity = BaseTransformer.convert(employeeDTO, new EmployeeEntity());
         if (employeeEntity.getEmployeeUserId() == null) {
             employeeDAO.add(employeeEntity);
@@ -56,12 +56,8 @@ public class EmployeeServiceImpl implements EmployeeService {
         if (queryParam == null) {
             return PageModel.emptyModel();
         }
-        List<EmployeeDTO> employeeDTOs = Lists.newArrayList();
         List<EmployeeEntity> employeeEntities = employeeDAO.query(queryParam);
-        for (EmployeeEntity employeeEntity : employeeEntities) {
-            EmployeeDTO employeeDTO = BaseTransformer.convert(employeeEntity, new EmployeeDTO());
-            employeeDTOs.add(employeeDTO);
-        }
+        List<EmployeeDTO> employeeDTOs = Lists2.transform(employeeEntities, EmployeeTransformers.ENTITY_TO_DTO);
         int count = employeeDAO.count(queryParam);
         return PageModel.build(employeeDTOs, count);
 

@@ -1,6 +1,7 @@
-package com.employee.param;
+package com.employee.request;
 
 import com.employee.common.constant.StatusCode;
+import com.employee.param.BaseQueryParam;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
