@@ -10,7 +10,7 @@ import lombok.experimental.FieldDefaults;
  **/
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class OrderProductRequest {
+public class ProductRequest {
     /**
      * sku编码
      */

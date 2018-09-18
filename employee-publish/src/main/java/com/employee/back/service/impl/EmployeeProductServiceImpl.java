@@ -2,12 +2,13 @@ package com.employee.back.service.impl;
 
 import com.employee.back.dao.EmployeeProductDAO;
 import com.employee.back.service.EmployeeProductService;
+import com.employee.back.transformers.EmployeeProductTransformers;
 import com.employee.common.constant.StateCode;
 import com.employee.common.converter.BaseTransformer;
 import com.employee.common.dto.PageModel;
 import com.employee.common.dto.ResultDTO;
+import com.employee.common.guava2.Lists2;
 import com.employee.dto.EmployeeProductDTO;
-import com.employee.dto.ProductDTO;
 import com.employee.entity.EmployeeProductEntity;
 import com.employee.param.EmployeeProductQueryParam;
 import com.google.common.collect.Lists;
@@ -30,20 +31,12 @@ public class EmployeeProductServiceImpl implements EmployeeProductService {
     @Autowired
     private EmployeeProductDAO employeeProductDAO;
 
-    public ResultDTO<Void> save(EmployeeProductDTO proudctDTO) {
-        EmployeeProductEntity productEntity = BaseTransformer.convert(proudctDTO, new EmployeeProductEntity());
-        if (productEntity.getEmployeeProductId() == null) {
-            int affectedRows= employeeProductDAO.save(productEntity);
+    @Override
+    public ResultDTO<Void> save(List<EmployeeProductDTO> proudctDTOs) {
+        List<EmployeeProductEntity> productEntities = Lists2.transform(proudctDTOs, EmployeeProductTransformers.DTO_TO_ENTITY);
+            int affectedRows= employeeProductDAO.save(productEntities);
             log.info("添加商品:{}",affectedRows);
             return ResultDTO.successfy();
-        }
-        employeeProductDAO.update(productEntity);
-        return ResultDTO.successfy();
-    }
-
-    @Override
-    public ResultDTO<Void> save(List<ProductDTO> proudctDTO) {
-        return null;
     }
 
     @Override

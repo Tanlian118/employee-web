@@ -1,6 +1,6 @@
 package com.employee.back.service;
 
-import com.employee.dto.ProductDTO;
+import com.employee.dto.ExitProductDTO;
 
 import java.util.List;
 import java.util.Set;
@@ -16,5 +16,5 @@ public interface ProductQueryService {
      * @param productIds
      * @return
      */
-    List<ProductDTO> queryProductByIds(Set<Integer> productIds);
+    List<ExitProductDTO> queryProductByIds(Set<Integer> productIds);
 }

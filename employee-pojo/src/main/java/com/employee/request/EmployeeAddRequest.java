@@ -28,4 +28,9 @@ public class EmployeeAddRequest {
      */
     String phone;
 
+    /**
+     * 用户密码
+     */
+    String password;
+
 }

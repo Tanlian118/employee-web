@@ -12,7 +12,7 @@ import java.util.Set;
  **/
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class OrderProductListParam {
+public class ProductListParam {
 
 
     /**

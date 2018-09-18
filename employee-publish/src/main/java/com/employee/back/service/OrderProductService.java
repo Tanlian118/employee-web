@@ -1,8 +1,8 @@
 package com.employee.back.service;
 
 import com.employee.common.dto.ResultDTO;
-import com.employee.dto.OrderProductDTO;
-import com.employee.param.OrderProductQueryParam;
+import com.employee.dto.ProductDTO;
+import com.employee.param.ProductQueryParam;
 
 import java.util.List;
 import java.util.Set;
@@ -14,7 +14,7 @@ import java.util.Set;
 public interface OrderProductService {
 
 
-    List<OrderProductDTO> queryByParam(OrderProductQueryParam queryParam);
+    List<ProductDTO> queryByParam(ProductQueryParam queryParam);
 
     ResultDTO<Void> delete(Set<Integer> employeeProductIds);
 }

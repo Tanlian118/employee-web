@@ -2,8 +2,8 @@ package com.employee.back.transformers;
 
 import com.employee.common.converter.BaseTransformer;
 import com.employee.common.converter.SafeFunction;
-import com.employee.dto.OrderProductDTO;
-import com.employee.entity.OrderProductEntity;
+import com.employee.dto.ProductDTO;
+import com.employee.entity.ProductEntity;
 import com.employee.vo.OrderProductVO;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
@@ -15,9 +15,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class OrderProductTransformers extends BaseTransformer{
 
-   public static  final SafeFunction<OrderProductEntity,OrderProductDTO> ENTITY_TO_DTO = input -> convert(input, new OrderProductDTO());
+   public static  final SafeFunction<ProductEntity,ProductDTO> ENTITY_TO_DTO = input -> convert(input, new ProductDTO());
 
-   public static  final SafeFunction<OrderProductDTO,OrderProductEntity> DTO_TO_ENTITY = input -> convert(input, new OrderProductEntity());
+   public static  final SafeFunction<ProductDTO,ProductEntity> DTO_TO_ENTITY = input -> convert(input, new ProductEntity());
 
-   public static  final SafeFunction<OrderProductDTO,OrderProductVO> DTO_TO_VO = input -> convert(input, new OrderProductVO());
+   public static  final SafeFunction<ProductDTO,OrderProductVO> DTO_TO_VO = input -> convert(input, new OrderProductVO());
 }

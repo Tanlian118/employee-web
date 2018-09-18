@@ -8,11 +8,12 @@ import java.util.Set;
 
 /**
  * @author Tanlian
- * @create 2018-09-17 21:10
+ * @create 2018-09-15 22:14
  **/
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ProductQueryParam {
+public class ProductQueryParam extends BaseQueryParam {
+
 
     /**
      * 商品id
@@ -20,17 +21,12 @@ public class ProductQueryParam {
     Set<Integer> productIds;
 
     /**
+     * sku编码
+     */
+    String productCode;
+
+    /**
      * 商品名称
      */
-    String name;
-
-    /**
-     * 副标题
-     */
-    String keyword;
-
-    /**
-     * 编码
-     */
-    String code;
+    String productName;
 }

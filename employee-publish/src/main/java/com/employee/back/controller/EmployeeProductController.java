@@ -4,6 +4,7 @@ import com.employee.back.adapter.EmployeeProductAdapter;
 import com.employee.common.dto.PageModel;
 import com.employee.common.dto.ResultDTO;
 import com.employee.request.EmployeeProductListParam;
+import com.employee.request.ProductListParam;
 import com.employee.request.ProductAddRequest;
 import com.employee.vo.EmployeeProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ import java.util.Set;
  * @create 2018-09-16 19:13
  **/
 @RestController
-@RequestMapping("/em/pro")
+@RequestMapping("/em/product")
 public class EmployeeProductController {
 
     @Autowired
@@ -51,8 +52,18 @@ public class EmployeeProductController {
      * @param listParam
      * @return
      */
-    @RequestMapping(value = "list", method = RequestMethod.GET)
+    @RequestMapping(value = "employeelist", method = RequestMethod.GET)
     public PageModel<EmployeeProductVO>list(EmployeeProductListParam listParam) {
+        return employeeProductAdapter.listEmployeeProduct(listParam);
+    }
+
+    /**
+     * 商品列表
+     * @param listParam
+     * @return
+     */
+    @RequestMapping(value = "list", method = RequestMethod.GET)
+    public ResultDTO<Void> productList(ProductListParam listParam) {
         return employeeProductAdapter.listProduct(listParam);
     }
 }

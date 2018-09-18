@@ -14,33 +14,14 @@ import java.util.Set;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ProductAddRequest {
 
-
     /**
      * 商品id
      */
     Set<Integer> ProductIds;
-    /**
-     * sku编码
-     */
-    String productCode;
 
     /**
-     * 商品名称
+     * 是否存在商品
      */
-    String productName;
+    Boolean exitProductId;
 
-    /**
-     * 副标题
-     */
-    String productSubtitle;
-
-    /**
-     * 商品主图
-     */
-    String productImage;
-
-    /**
-     *商品权重
-     */
-    Integer weight;
 }

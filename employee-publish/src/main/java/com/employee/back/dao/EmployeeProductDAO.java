@@ -20,7 +20,7 @@ public interface EmployeeProductDAO {
             " product_subtitle, product_image)",
             "VALUES(#{entity.employeeProductId}, #{entity.productId},#{entity.productCode},",
             "#{entity.productName}, #{entity.productSubtitle},#{entity.productImage})"})
-    int save(@Param("entity") EmployeeProductEntity employeeProductEntity);
+    int save(@Param("entity") List<EmployeeProductEntity> employeeProductEntities);
 
     @Update({"UPDATE employee_product",
             "SET product_code=#{entity.productCode}, product_name=#{entity.productName}",

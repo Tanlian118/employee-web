@@ -1,9 +1,9 @@
 com\employee\back\adapter\EmployeeAdapter.class
 com\employee\back\transformers\EmployeeProductTransformers.class
+com\employee\common\util\CookieUtils.class
 com\employee\common\converter\SafeFunction.class
 com\employee\back\transformers\OrderProductTransformers.class
 com\employee\common\guava2\Sets2.class
-com\employee\back\adapter\OrderProductAdapter.class
 com\employee\back\transformers\EmployeeTransformers.class
 com\employee\common\guava2\Maps2.class
 com\employee\back\dao\EmployeeDAO.class
@@ -15,9 +15,10 @@ com\employee\common\guava2\Sets2$AlwaysContainsSet.class
 com\employee\back\service\impl\ProductQueryServiceImpl.class
 com\employee\back\controller\EmployeeProductController.class
 com\employee\back\service\impl\OrderProductServiceImpl.class
-com\employee\back\dao\OrderProductDAO.class
+com\employee\common\util\AESUtil.class
+com\employee\common\util\SessionUtil.class
+com\employee\back\dao\ExitProductDAO.class
 com\employee\common\handler\MyBatisEnumTypeHandler.class
-com\employee\back\controller\OrderProductController.class
 com\employee\common\advice\GlobusalExceptionHandler.class
 com\employee\back\dao\EmployeeProductDAO.class
 com\employee\back\service\EmployeeProductService.class

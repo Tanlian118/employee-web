@@ -32,6 +32,16 @@ public class EmployeeDTO {
     String phone;
 
     /**
+     * 用户密码
+     */
+    String password;
+
+    /**
+     * 密钥
+     */
+    String publicKey;
+
+    /**
      * 状态：-1/0/1 -> 删除/禁用/正常
      */
     StatusCode status;
