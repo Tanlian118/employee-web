@@ -1,5 +1,6 @@
 package com.employee.request;
 
+import com.tan.kit.param.BaseQueryParam;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
@@ -12,7 +13,7 @@ import java.util.Set;
  **/
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class ProductListParam {
+public class ProductListParam extends BaseQueryParam {
 
 
     /**

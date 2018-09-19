@@ -12,6 +12,6 @@
 
     <typeHandlers>
         <typeHandler handler="com.employee.common.handler.MyBatisEnumTypeHandler"
-                     javaType="com.employee.common.constant.StatusCode"/>
+                     javaType="com.tan.kit.constant.StatusCode"/>
     </typeHandlers>
 </configuration>

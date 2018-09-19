@@ -1,6 +1,6 @@
 package com.employee.entity;
 
-import com.employee.common.constant.StatusCode;
+import com.tan.kit.constant.StatusCode;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
@@ -44,6 +44,11 @@ public class EmployeeProductEntity {
      * 商品主图
      */
     String productImage;
+
+    /**
+     * 商品价格
+     */
+    Integer productPrice;
 
     /**
      * 状态：-1/0/1 -> 删除/禁用/正常

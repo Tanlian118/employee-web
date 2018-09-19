@@ -1,6 +1,6 @@
 package com.employee.request;
 
-import com.employee.param.BaseQueryParam;
+import com.tan.kit.param.BaseQueryParam;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;

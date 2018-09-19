@@ -1,11 +1,11 @@
 package com.employee.back.controller;
 
 import com.employee.back.service.EmployeeService;
-import com.employee.common.constant.StateCode;
-import com.employee.common.dto.ResultDTO;
 import com.employee.dto.EmployeeDTO;
 import com.employee.param.EmployeeQueryParam;
 import com.employee.vo.EmployeeVO;
+import com.tan.kit.constant.StateCode;
+import com.tan.kit.dto.ResultDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.util.CollectionUtils;
@@ -36,8 +36,6 @@ public class LoginController {
         EmployeeQueryParam employeeQueryParam = new EmployeeQueryParam();
         employeeQueryParam.setUsername(username);
         List<EmployeeDTO> employeeDTOs = employeeService.queryByParam(employeeQueryParam).getData();
-
-
         if (CollectionUtils.isEmpty(employeeDTOs)) {
             return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "用户不存在");
         }

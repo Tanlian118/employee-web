@@ -3,15 +3,15 @@ package com.employee.back.service.impl;
 import com.employee.back.dao.EmployeeProductDAO;
 import com.employee.back.service.EmployeeProductService;
 import com.employee.back.transformers.EmployeeProductTransformers;
-import com.employee.common.constant.StateCode;
-import com.employee.common.converter.BaseTransformer;
-import com.employee.common.dto.PageModel;
-import com.employee.common.dto.ResultDTO;
-import com.employee.common.guava2.Lists2;
 import com.employee.dto.EmployeeProductDTO;
 import com.employee.entity.EmployeeProductEntity;
 import com.employee.param.EmployeeProductQueryParam;
 import com.google.common.collect.Lists;
+import com.tan.kit.constant.StateCode;
+import com.tan.kit.converter.BaseTransformer;
+import com.tan.kit.dto.PageModel;
+import com.tan.kit.dto.ResultDTO;
+import com.tan.kit.guava2.Lists2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,7 +34,7 @@ public class EmployeeProductServiceImpl implements EmployeeProductService {
     @Override
     public ResultDTO<Void> save(List<EmployeeProductDTO> proudctDTOs) {
         List<EmployeeProductEntity> productEntities = Lists2.transform(proudctDTOs, EmployeeProductTransformers.DTO_TO_ENTITY);
-            int affectedRows= employeeProductDAO.save(productEntities);
+        int affectedRows= employeeProductDAO.save(productEntities);
             log.info("添加商品:{}",affectedRows);
             return ResultDTO.successfy();
     }

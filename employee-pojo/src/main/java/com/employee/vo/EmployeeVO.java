@@ -1,6 +1,6 @@
 package com.employee.vo;
 
-import com.employee.common.constant.StatusCode;
+import com.tan.kit.constant.StatusCode;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;

@@ -18,6 +18,9 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.tan</groupId>
+            <artifactId>base-kit-util</artifactId>
+        </dependency>
     </dependencies>
-
 </project>

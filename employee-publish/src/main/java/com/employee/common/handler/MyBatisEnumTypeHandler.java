@@ -1,6 +1,6 @@
 package com.employee.common.handler;
 
-import com.employee.common.constant.MyBatisEnum;
+import com.tan.kit.constant.MyBatisEnum;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.MappedTypes;

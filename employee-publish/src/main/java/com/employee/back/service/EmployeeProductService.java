@@ -1,9 +1,9 @@
 package com.employee.back.service;
 
-import com.employee.common.dto.PageModel;
-import com.employee.common.dto.ResultDTO;
 import com.employee.dto.EmployeeProductDTO;
 import com.employee.param.EmployeeProductQueryParam;
+import com.tan.kit.dto.PageModel;
+import com.tan.kit.dto.ResultDTO;
 
 import java.util.List;
 import java.util.Set;

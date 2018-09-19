@@ -29,17 +29,6 @@ public interface EmployeeProductDAO {
     })
     int update(@Param("entity") EmployeeProductEntity employeeProductEntity);
 
-
-    @Update({"<script>",
-            "UPDATE employee_product SET status= -1",
-            "WHERE employee_product_Id IN",
-            "<foreach item='id' collection='ids' open='(' separator=',' close=')'>",
-            "#{id}",
-            "</foreach>",
-            "</script>"})
-    int delete(@Param("ids") Set<Integer> employeeProductIds);
-
-
     @Select({"<script>",
             "SELECT product_id, product_code, product_name,product_subtitle, product_image",
             "FROM employee_product",
@@ -72,4 +61,13 @@ public interface EmployeeProductDAO {
             "</script>"
     })
     int count (EmployeeProductQueryParam queryParam);
+
+    @Update({"<script>",
+            "UPDATE employee_product SET status= 0",
+            "WHERE employee_product_id IN",
+            "<foreach item='id' collection='ids' open='(' separator=',' close=')'>",
+            "#{id}",
+            "</foreach>",
+            "</script>"})
+    int delete(Set<Integer> employeeProductIds);
 }

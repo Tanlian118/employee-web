@@ -2,17 +2,17 @@ package com.employee.back.adapter;
 
 import com.employee.back.service.EmployeeService;
 import com.employee.back.transformers.EmployeeTransformers;
-import com.employee.common.constant.FixedPageSizeEnum;
-import com.employee.common.constant.StateCode;
-import com.employee.common.converter.BaseTransformer;
-import com.employee.common.dto.PageModel;
-import com.employee.common.dto.ResultDTO;
-import com.employee.common.guava2.Lists2;
 import com.employee.dto.EmployeeDTO;
-import com.employee.request.EmployeeListParam;
 import com.employee.param.EmployeeQueryParam;
 import com.employee.request.EmployeeAddRequest;
+import com.employee.request.EmployeeListParam;
 import com.employee.vo.EmployeeVO;
+import com.tan.kit.constant.FixedPageSizeEnum;
+import com.tan.kit.constant.StateCode;
+import com.tan.kit.converter.BaseTransformer;
+import com.tan.kit.dto.PageModel;
+import com.tan.kit.dto.ResultDTO;
+import com.tan.kit.guava2.Lists2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -63,7 +63,7 @@ public class EmployeeAdapter {
 
     public PageModel<EmployeeVO> list(EmployeeListParam listParam) {
         if (listParam == null) {
-         return PageModel.emptyModel();
+            return PageModel.emptyModel();
         }
         EmployeeQueryParam queryParam = new EmployeeQueryParam();
         int pageSize = FixedPageSizeEnum.getByPageSize(listParam.getPageSize()).getPageSize();
@@ -75,7 +75,7 @@ public class EmployeeAdapter {
         PageModel<EmployeeDTO> pageModel = employeeService.queryByParam(queryParam);
         List<EmployeeDTO> employeeDTOs = pageModel.getData();
         List<EmployeeVO> employeeVOs = Lists2.transform(employeeDTOs, EmployeeTransformers.DTO_TO_VO);
-        log.info("列表参数",listParam);
-      return  PageModel.build(employeeVOs,pageModel.getTotalCount(), listParam.getPage(), pageSize);
+        log.info("列表参数", listParam);
+        return PageModel.build(employeeVOs, pageModel.getTotalCount(), listParam.getPage(), pageSize);
     }
 }

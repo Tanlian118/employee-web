@@ -20,6 +20,7 @@
         <jodd.version>3.8.5</jodd.version>
         <guava.version>18.0</guava.version>
         <junit.version>4.12</junit.version>
+        <servlet.version>2.5</servlet.version>
         <shiro.version>1.2.4</shiro.version>
         <jedis.version>2.9.0</jedis.version>
         <druid.version>1.1.5</druid.version>
@@ -54,13 +55,23 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--dms-->
+
             <dependency>
-                <groupId>com.baturu.dms</groupId>
-                <artifactId>dms-web-pojo</artifactId>
-                <version>${pojo.version}</version>
+                <artifactId>employee-pojo</artifactId>
+                <groupId>com.employee</groupId>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.product</groupId>
+                <artifactId>product-service-api</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tan</groupId>
+                <artifactId>base-kit-util</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
 
             <!-- javax -->
             <dependency>
@@ -71,7 +82,6 @@
             </dependency>
 
             <!-- Third Party -->
-
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
