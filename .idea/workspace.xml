@@ -2,156 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a0016a1-39a8-4503-afcb-059d0a0fedda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/ProductVO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee-publish/src/main/resources/spring-dubbo-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee-publish/src/main/resources/spring-dubbo-consumer.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/common/constant/FixedPageSizeEnum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/common/constant/MyBatisEnum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/common/constant/StateCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/common/constant/StatusCode.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/common/dto/PageModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/common/dto/ResultDTO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/ExitProductDTO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/ProductDTO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/ExitProductEntity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/ProductEntity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/BaseQueryParam.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/ExitProductQueryParam.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/ProductQueryParam.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/OrderProductVO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/common/constant/FixedPageSizeEnum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/common/constant/MyBatisEnum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/common/constant/StateCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/common/constant/StatusCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/common/dto/PageModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/common/dto/ResultDTO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/dto/ExitProductDTO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/dto/ProductDTO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/entity/ExitProductEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/entity/ProductEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/param/BaseQueryParam.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/param/ExitProductQueryParam.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/param/ProductQueryParam.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/vo/OrderProductVO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/ExitProductDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/ProductDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/OrderProductService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/ProductQueryService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/OrderProductServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/ProductQueryServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/OrderProductTransformers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/ProductTransformers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/converter/BaseTransformer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/converter/SafeFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/guava2/Lists2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/guava2/Maps2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/guava2/Sets2.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/dao/ExitProductDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/dao/ProductDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/OrderProductService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/ProductQueryService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/impl/OrderProductServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/impl/ProductQueryServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/transformers/OrderProductTransformers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/transformers/ProductTransformers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/common/converter/BaseTransformer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/common/converter/SafeFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/common/guava2/Lists2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/common/guava2/Maps2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/common/guava2/Sets2$AlwaysContainsSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/common/guava2/Sets2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/dao/ExitProductDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/dao/ProductDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/OrderProductService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/ProductQueryService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/impl/OrderProductServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/impl/ProductQueryServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/transformers/OrderProductTransformers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/transformers/ProductTransformers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/common/converter/BaseTransformer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/common/converter/SafeFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/common/guava2/Lists2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/common/guava2/Maps2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/common/guava2/Sets2$AlwaysContainsSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/common/guava2/Sets2.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/dto/EmployeeDTO.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/dto/EmployeeDTO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/entity/EmployeeEntity.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/entity/EmployeeEntity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/dto/EmployeeProductDTO.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/dto/EmployeeProductDTO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/entity/EmployeeProductEntity.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/entity/EmployeeProductEntity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/param/EmployeeProductQueryParam.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/param/EmployeeProductQueryParam.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/param/EmployeeQueryParam.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/param/EmployeeQueryParam.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/EmployeeListParam.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/EmployeeListParam.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/EmployeeProductListParam.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/EmployeeProductListParam.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/ProductAddRequest.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/ProductAddRequest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/ProductListParam.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/ProductListParam.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/vo/EmployeeVO.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/vo/EmployeeVO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/employee-pojo-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/employee-pojo/target/employee-pojo-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/adapter/EmployeeAdapter.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/adapter/EmployeeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/adapter/EmployeeProductAdapter.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/adapter/EmployeeProductAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/controller/EmployeeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/controller/EmployeeProductController.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/controller/EmployeeProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/controller/LoginController.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/dao/EmployeeProductDAO.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/dao/EmployeeProductDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/EmployeeProductService.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/EmployeeProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/EmployeeService.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/EmployeeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/impl/EmployeeProductServiceImpl.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/impl/EmployeeProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/impl/EmployeeServiceImpl.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/impl/EmployeeServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/transformers/EmployeeProductTransformers.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/transformers/EmployeeProductTransformers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/transformers/EmployeeTransformers.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/transformers/EmployeeTransformers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/common/handler/MyBatisEnumTypeHandler.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/common/handler/MyBatisEnumTypeHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/adapter/EmployeeAdapter.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/adapter/EmployeeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/adapter/EmployeeProductAdapter.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/adapter/EmployeeProductAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/controller/EmployeeController.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/controller/EmployeeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/controller/EmployeeProductController.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/controller/EmployeeProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/controller/LoginController.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/dao/EmployeeProductDAO.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/dao/EmployeeProductDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/EmployeeProductService.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/EmployeeProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/EmployeeService.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/EmployeeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/impl/EmployeeProductServiceImpl.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/impl/EmployeeProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/impl/EmployeeServiceImpl.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/impl/EmployeeServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/transformers/EmployeeProductTransformers.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/transformers/EmployeeProductTransformers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/transformers/EmployeeTransformers.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/transformers/EmployeeTransformers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/common/handler/MyBatisEnumTypeHandler.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/common/handler/MyBatisEnumTypeHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/lib/employee-pojo-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/lib/employee-pojo-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/employee_publish_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/employee_publish_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/employee-pojo.iml" afterPath="$PROJECT_DIR$/employee-pojo/employee-pojo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/pom.xml" afterPath="$PROJECT_DIR$/employee-pojo/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeDTO.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeEntity.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeProductDTO.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeProductDTO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeProductEntity.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeProductEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeProductQueryParam.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeProductQueryParam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeQueryParam.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeQueryParam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeListParam.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeListParam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeProductListParam.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeProductListParam.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductAddRequest.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductAddRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductListParam.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductListParam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/EmployeeVO.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/EmployeeVO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/employee-pojo/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/employee-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/employee-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/employee-publish.iml" afterPath="$PROJECT_DIR$/employee-publish/employee-publish.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/pom.xml" afterPath="$PROJECT_DIR$/employee-publish/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeAdapter.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeController.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/LoginController.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeProductDAO.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeProductDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeProductService.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeService.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeProductServiceImpl.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeProductServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeServiceImpl.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeProductTransformers.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeProductTransformers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeTransformers.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeTransformers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/handler/MyBatisEnumTypeHandler.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/handler/MyBatisEnumTypeHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/resources/mybatis-config.xml" afterPath="$PROJECT_DIR$/employee-publish/src/main/resources/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/employee-publish/target/classes/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/employee-publish/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/employee-publish/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/employee-publish/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-web.iml" afterPath="$PROJECT_DIR$/employee-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="employee-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -187,8 +65,8 @@
       <file leaf-file-name="EmployeeProductController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+            <state relative-caret-position="390">
+              <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,43 +74,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeProductAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java">
+      <file leaf-file-name="ProductAddRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductAddRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductQueryParam.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/product/product-service-api/1.0-SNAPSHOT/product-service-api-1.0-SNAPSHOT.jar!/com/product/param/ProductQueryParam.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            <state relative-caret-position="220">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvokerInvocationHandler.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.7/dubbo-2.5.7.jar!/com/alibaba/dubbo/rpc/proxy/InvokerInvocationHandler.class">
+      <file leaf-file-name="EmployeeAddRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeAddRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvocableHandlerMethod.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.1.RELEASE/spring-web-4.2.1.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -241,50 +97,68 @@
       <file leaf-file-name="EmployeeProductDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeProductDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="31" />
+            <state relative-caret-position="44">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeDAO.java">
+      <file leaf-file-name="EmployeeProductEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeProductEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeAdapter.java">
+      <file leaf-file-name="EmployeeProductAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/employee-publish/src/main/resources/mybatis-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="588">
+              <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyBatisEnumTypeHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/handler/MyBatisEnumTypeHandler.java">
+      <file leaf-file-name="EmployeeProductTransformers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeProductTransformers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="22">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeProductServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeProductServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="44" column="31" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeProductDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeProductDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -309,8 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/util/CookieUtils.java" />
-        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/util/AESUtil.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/util/SessionUtil.java" />
         <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/UserQueryParam.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/UserDTO.java" />
@@ -319,8 +191,6 @@
         <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeAddRequest.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeDAO.java" />
         <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/EmployeeProductVO.java" />
-        <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductAddRequest.java" />
-        <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeProductDTO.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/OrderProductController.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/OrderProductAdapter.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -330,17 +200,12 @@
         <option value="$PROJECT_DIR$/employee-publish/src/main/resources/spring-dubbo-config.xml" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/ProductService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeProductService.java" />
-        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/employee-publish/pom.xml" />
         <option value="$PROJECT_DIR$/employee-pojo/pom.xml" />
         <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeEntity.java" />
-        <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeProductEntity.java" />
-        <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeProductQueryParam.java" />
         <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeQueryParam.java" />
         <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeListParam.java" />
         <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeProductListParam.java" />
-        <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductListParam.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeTransformers.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/ProductTransformers.java" />
         <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/EmployeeVO.java" />
@@ -351,14 +216,23 @@
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/ProductVO.java" />
         <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/ProductVO.java" />
-        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeProductTransformers.java" />
-        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeController.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/resources/spring-dubbo-consumer.xml" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeAdapter.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java" />
         <option value="$MAVEN_REPOSITORY$/com/product/product-service-api/1.0-SNAPSHOT/product-service-api-1.0-SNAPSHOT.jar!/com/product/param/ProductQueryParam.class" />
+        <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeProductQueryParam.java" />
+        <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductListParam.java" />
+        <option value="$MAVEN_REPOSITORY$/com/product/product-service-api/1.0-SNAPSHOT/product-service-api-1.0-SNAPSHOT.jar!/com/product/dto/ProductDTO.class" />
+        <option value="$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5.jar!/org/apache/ibatis/annotations/Param.class" />
+        <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductAddRequest.java" />
+        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java" />
+        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeProductService.java" />
+        <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeProductDTO.java" />
+        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeProductTransformers.java" />
+        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java" />
+        <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeProductEntity.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeProductDAO.java" />
       </list>
     </option>
@@ -378,7 +252,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
     <option name="y" value="-11" />
-    <option name="width" value="1934" />
+    <option name="width" value="1942" />
     <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -406,6 +280,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -677,48 +554,6 @@
               <option name="myItemId" value="employee" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-publish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -751,90 +586,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="back" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transformers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-publish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="back" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-publish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="back" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -984,181 +735,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-pojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-pojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="request" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-pojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="param" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-pojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee-pojo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dto" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1381,313 +959,119 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1934" height="1042" extended-state="0" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="RestServices" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31148428" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32962963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52469134" sideWeight="0.5021575" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41975307" sideWeight="0.5021575" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="89" y="89" width="1742" height="842" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18015103" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32962963" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.4978425" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="MyBatis Sql Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52469134" sideWeight="0.4978425" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23564464" sideWeight="0.49506173" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27993527" sideWeight="0.49506173" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23193096" sideWeight="0.50823045" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32955772" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2713053" sideWeight="0.50493824" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41975307" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45802468" sideWeight="0.4978425" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="89" y="89" width="1742" height="842" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32962963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="RestServices" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32936078" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52469134" sideWeight="0.5021575" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18015103" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5419753" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32962963" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="89" y="89" width="1742" height="842" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32962963" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="MyBatis Sql Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52469134" sideWeight="0.4978425" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25782093" sideWeight="0.49506173" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23193096" sideWeight="0.50823045" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2713053" sideWeight="0.50493824" order="3" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="33" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeController.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/stream/Collectors.java">
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="103" column="19" selection-start-line="103" selection-start-column="19" selection-end-line="103" selection-end-column="19" />
+        <state relative-caret-position="1144">
+          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.1.RELEASE/spring-beans-4.2.1.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/product/product-service-api/1.0-SNAPSHOT/product-service-api-1.0-SNAPSHOT.jar!/com/product/param/ProductQueryParam.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/converter/BaseTransformer.java" />
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.2.1.RELEASE/spring-beans-4.2.1.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/ProductDAO.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="73" column="25" selection-start-line="69" selection-start-column="12" selection-end-line="73" selection-end-column="25" />
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/common/constant/StatusCode.java" />
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeProductServiceImpl.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.5.7/dubbo-2.5.7.jar!/com/alibaba/dubbo/rpc/proxy/InvokerInvocationHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="264">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeEntity.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.1.RELEASE/spring-web-4.2.1.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        <state relative-caret-position="4334">
+          <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
           <folding>
+            <element signature="e#0#10767#0" expanded="false" />
             <element signature="imports" expanded="false" />
+            <element signature="e#2446#2447#0" expanded="false" />
+            <element signature="e#2472#2473#0" expanded="false" />
+            <element signature="e#2598#2599#0" expanded="false" />
+            <element signature="e#2625#2626#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeProductEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/ExitProductEntity.java" />
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/BaseQueryParam.java" />
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeProductQueryParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeQueryParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/ExitProductQueryParam.java" />
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeAddRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeProductListParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductAddRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductListParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/ProductTransformers.java" />
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeTransformers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeListParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/ProductVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="37" column="100" selection-start-line="37" selection-start-column="100" selection-end-line="37" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/ProductServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/EmployeeVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/EmployeeProductVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/ProductVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeProductTransformers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1695,50 +1079,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="44" column="32" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/resources/spring-dubbo-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/resources/spring-dubbo-consumer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeService.java">
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -1755,10 +1099,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/handler/MyBatisEnumTypeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/product/product-service-api/1.0-SNAPSHOT/product-service-api-1.0-SNAPSHOT.jar!/com/product/param/ProductQueryParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -1771,21 +1131,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/product/product-service-api/1.0-SNAPSHOT/product-service-api-1.0-SNAPSHOT.jar!/com/product/param/ProductQueryParam.class">
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/handler/MyBatisEnumTypeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        <state relative-caret-position="66">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java">
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+        <state relative-caret-position="378">
+          <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/tan/base-kit-util/1.0-SNAPSHOT/base-kit-util-1.0-SNAPSHOT.jar!/com/tan/kit/constant/FixedPageSizeEnum.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="37" column="63" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/tan/base-kit-util/1.0-SNAPSHOT/base-kit-util-1.0-SNAPSHOT.jar!/com/tan/kit/dto/PageModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/tan/base-kit-util/1.0-SNAPSHOT/base-kit-util-1.0-SNAPSHOT.jar!/com/tan/kit/converter/BaseTransformer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-484">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeTransformers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/tan/base-kit-util/1.0-SNAPSHOT/base-kit-util-1.0-SNAPSHOT.jar!/com/tan/kit/guava2/Lists2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.5/mybatis-3.4.5.jar!/org/apache/ibatis/annotations/Param.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1797,36 +1246,188 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/tan/base-kit-util/1.0-SNAPSHOT/base-kit-util-1.0-SNAPSHOT.jar!/com/tan/kit/constant/StateCode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/tan/base-kit-util/1.0-SNAPSHOT/base-kit-util-1.0-SNAPSHOT.jar!/com/tan/kit/dto/ResultDTO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/product/product-service-api/1.0-SNAPSHOT/product-service-api-1.0-SNAPSHOT.jar!/com/product/service/ProductQueryService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.1.RELEASE/spring-web-4.2.1.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="310">
           <caret line="228" column="0" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/product/product-service-api/1.0-SNAPSHOT/product-service-api-1.0-SNAPSHOT.jar!/com/product/dto/ProductDTO.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+        <state relative-caret-position="132">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/ProductVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeProductQueryParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/param/EmployeeQueryParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductListParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeProductListParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeListParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeAddRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeProductDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/ProductAddRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/transformers/EmployeeProductTransformers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeDAO.java">
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="44" column="31" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeProductEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="31" />
+        <state relative-caret-position="44">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
           <folding />
         </state>
       </provider>

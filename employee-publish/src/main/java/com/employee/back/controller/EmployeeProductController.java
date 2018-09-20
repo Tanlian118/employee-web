@@ -4,7 +4,6 @@ import com.employee.back.adapter.EmployeeProductAdapter;
 import com.employee.request.EmployeeProductListParam;
 import com.employee.request.ProductAddRequest;
 import com.employee.request.ProductListParam;
-import com.employee.vo.EmployeeProductVO;
 import com.employee.vo.ProductVO;
 import com.tan.kit.dto.PageModel;
 import com.tan.kit.dto.ResultDTO;
@@ -33,9 +32,9 @@ public class EmployeeProductController {
      * @param productAddRequest
      * @return
      */
-    @RequestMapping(value = "save", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResultDTO<Void> save(@RequestBody ProductAddRequest productAddRequest) {
-        return employeeProductAdapter.save(productAddRequest);
+    @RequestMapping(value = "saveProduct", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResultDTO<Void> saveProduct(@RequestBody ProductAddRequest productAddRequest) {
+        return employeeProductAdapter.saveOrUpate(productAddRequest);
     }
 
     /**
@@ -54,8 +53,8 @@ public class EmployeeProductController {
      * @return
      */
     @RequestMapping(value = "list", method = RequestMethod.GET)
-    public PageModel<EmployeeProductVO> list(EmployeeProductListParam listParam) {
-        return employeeProductAdapter.listEmployeeProduct(listParam);
+    public PageModel<ProductVO> list(ProductListParam listParam) {
+        return employeeProductAdapter.listProduct(listParam);
     }
 
     /**
@@ -64,7 +63,9 @@ public class EmployeeProductController {
      * @return
      */
     @RequestMapping(value = "employeelist", method = RequestMethod.GET)
-    public PageModel<ProductVO> productList(ProductListParam listParam) {
-        return employeeProductAdapter.listProduct(listParam);
+    public PageModel<ProductVO> productList(EmployeeProductListParam listParam) {
+        return employeeProductAdapter.listEmployeeProduct(listParam);
     }
+
+
 }

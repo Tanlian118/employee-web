@@ -16,16 +16,20 @@ import java.util.Set;
  **/
 public interface EmployeeProductDAO {
 
-    @Insert({"INSERT INTO employee_product(employee_product_id, product_id, product_code, product_name,",
-            " product_subtitle, product_image)",
-            "VALUES(#{entity.employeeProductId}, #{entity.productId},#{entity.productCode},",
-            "#{entity.productName}, #{entity.productSubtitle},#{entity.productImage})"})
-    int save(@Param("entity") List<EmployeeProductEntity> employeeProductEntities);
+    @Insert({"<script>",
+            "INSERT INTO employee_product",
+            "(product_id, product_code, product_name, product_subtitle, product_image)",
+            "VALUES",
+            "<foreach item='item' collection='entities' separator=','>",
+            "(#{item.productId}, #{item.productCode}, #{item.productName},",
+            "#{item.productSubtitle}, #{item.productImage})",
+            "</foreach>",
+            "</script>"})
+    int save(@Param("entities") List<EmployeeProductEntity> employeeProductEntities);
 
     @Update({"UPDATE employee_product",
-            "SET product_code=#{entity.productCode}, product_name=#{entity.productName}",
-            "product_subtitle=#{entity.productSubtitle}, product_image=#{entity.productImage}",
-            "WHERE status = 1"
+            "SET  product_price=#{entity.productPrice},weight=#{weight}",
+            "WHERE status = 1 AND type = 0"
     })
     int update(@Param("entity") EmployeeProductEntity employeeProductEntity);
 
@@ -34,7 +38,7 @@ public interface EmployeeProductDAO {
             "FROM employee_product",
             "WHERE status = 1",
             "<if test='productCode!= null'>",
-            "AND product_code LIKE CONCAT('%',#{productCode},'%')",
+            "AND product_code=#{productCode}",
             "</if>",
             "<if test='productName!= null'>",
             "AND product_name LIKE CONCAT('%', #{productName},'%')",
@@ -52,7 +56,7 @@ public interface EmployeeProductDAO {
             "FROM employee_product",
             "WHERE status = 1",
             "<if test='productCode!= null'>",
-            "AND product_code LIKE CONCAT('%',#{productCode},'%')",
+            "AND product_code=#{productCode}",
             "</if>",
             "<if test='productName!= null'>",
             "AND product_name LIKE CONCAT('%', #{productName},'%')",
@@ -60,7 +64,7 @@ public interface EmployeeProductDAO {
             "ORDER BY product_code DESC",
             "</script>"
     })
-    int count (EmployeeProductQueryParam queryParam);
+    int count(EmployeeProductQueryParam queryParam);
 
     @Update({"<script>",
             "UPDATE employee_product SET status= 0",

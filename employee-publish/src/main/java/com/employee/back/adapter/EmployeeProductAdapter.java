@@ -7,8 +7,8 @@ import com.employee.param.EmployeeProductQueryParam;
 import com.employee.request.EmployeeProductListParam;
 import com.employee.request.ProductAddRequest;
 import com.employee.request.ProductListParam;
-import com.employee.vo.EmployeeProductVO;
 import com.employee.vo.ProductVO;
+import com.google.common.collect.Lists;
 import com.product.dto.ProductDTO;
 import com.product.param.ProductQueryParam;
 import com.product.service.ProductQueryService;
@@ -36,10 +36,22 @@ public class EmployeeProductAdapter {
     @Autowired
     private EmployeeProductService employeeProductService;
 
-    public ResultDTO save(ProductAddRequest productRequest) {
-        List<ProductDTO> productDTOs = productQueryService.queryProductByIds(productRequest.getProductIds());
-        List<EmployeeProductDTO> employeeProductDTOs = Lists2.transform(productDTOs, EmployeeProductTransformers.DTO_TO_PRODUCT_DTO);
-        employeeProductService.save(employeeProductDTOs);
+    public ResultDTO saveOrUpate(ProductAddRequest productRequest) {
+        List<EmployeeProductDTO> employeeProductDTOs;
+        if (productRequest.getEmployeeProductId() == null) {
+            if (productRequest.getProductIds() == null) {
+                return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "请选择对应商品");
+            }
+            List<ProductDTO> productDTOs = productQueryService.queryProductByIds(productRequest.getProductIds());
+            if (CollectionUtils.isEmpty(productDTOs)) {
+                return ResultDTO.fail(StateCode.EMPTY_RESULT, "没有对应的商品信息");
+            }
+            employeeProductDTOs = Lists2.transform(productDTOs, EmployeeProductTransformers.DTO_TO_PRODUCT_DTO);
+        } else {
+            EmployeeProductDTO employeeProductDTO = EmployeeProductTransformers.REQUEST_TO_DTO.apply(productRequest);
+            employeeProductDTOs = Lists.newArrayList(employeeProductDTO);
+        }
+        employeeProductService.saveOrUpdate(employeeProductDTOs);
         return ResultDTO.successfy();
     }
 
@@ -51,7 +63,7 @@ public class EmployeeProductAdapter {
         return ResultDTO.successfy();
     }
 
-    public PageModel<EmployeeProductVO> listEmployeeProduct(EmployeeProductListParam listParam) {
+    public PageModel<ProductVO> listProduct(ProductListParam listParam) {
         EmployeeProductQueryParam queryParam = new EmployeeProductQueryParam();
         queryParam.setNeedPagination(true);
         int pageSize = FixedPageSizeEnum.getByPageSize(listParam.getPageSize()).getPageSize();
@@ -61,11 +73,11 @@ public class EmployeeProductAdapter {
         queryParam.setProductName(listParam.getProductName());
         PageModel<EmployeeProductDTO> pageModel = employeeProductService.queryByParam(queryParam);
         List<EmployeeProductDTO> productDTOs = pageModel.getData();
-        List<EmployeeProductVO> productVOs = Lists2.transform(productDTOs, EmployeeProductTransformers.DTO_TO_VO);
+        List<ProductVO> productVOs = Lists2.transform(productDTOs, EmployeeProductTransformers.DTO_TO_PRODUCT_VO);
         return PageModel.build(productVOs, pageModel.getTotalCount(), listParam.getPage(), pageSize);
     }
 
-    public PageModel<ProductVO> listProduct(ProductListParam listParam) {
+    public PageModel<ProductVO> listEmployeeProduct(EmployeeProductListParam listParam) {
         //传入查询参数
         ProductQueryParam queryParam = new ProductQueryParam();
         queryParam.setNeedPagination(true);
@@ -77,6 +89,9 @@ public class EmployeeProductAdapter {
         //调用商品service的查询方法查出商品列表
         PageModel<ProductDTO> pageModel = productQueryService.queryParam(queryParam);
         List<ProductDTO> productDTOs = pageModel.getData();
+        if (CollectionUtils.isEmpty(productDTOs)) {
+            return PageModel.emptyModel();
+        }
         List<ProductVO> productVOs = Lists2.transform(productDTOs, EmployeeProductTransformers.PRODUCT_DTO_TO_VO);
         //将商品列表返回controller
         return PageModel.build(productVOs, pageModel.getTotalCount(), listParam.getPage(), pageSize);

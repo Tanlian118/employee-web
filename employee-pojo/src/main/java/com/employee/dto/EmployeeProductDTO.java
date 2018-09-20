@@ -20,7 +20,7 @@ public class EmployeeProductDTO {
     /**
      * 商品id
      */
-    Integer productId;
+    String productId;
 
     /**
      * sku编码
@@ -41,4 +41,10 @@ public class EmployeeProductDTO {
      * 商品主图
      */
     String productImage;
+
+    /**
+     * 商品价格
+     */
+    Integer productPrice;
+
 }

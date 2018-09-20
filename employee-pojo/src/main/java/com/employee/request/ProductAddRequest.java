@@ -17,11 +17,11 @@ public class ProductAddRequest {
     /**
      * 商品id
      */
-    Set<Integer> ProductIds;
+    Set<String> productIds;
 
     /**
-     * 是否存在商品
+     * 员工购id
      */
-    Boolean exitProductId;
+    String employeeProductId;
 
 }

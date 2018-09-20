@@ -23,7 +23,7 @@ public class EmployeeProductEntity {
     /**
      * 商品id
      */
-    Integer productId;
+    String productId;
 
     /**
      * sku编码
@@ -49,6 +49,11 @@ public class EmployeeProductEntity {
      * 商品价格
      */
     Integer productPrice;
+
+    /**
+     * 权重
+     */
+    Integer weight;
 
     /**
      * 状态：-1/0/1 -> 删除/禁用/正常

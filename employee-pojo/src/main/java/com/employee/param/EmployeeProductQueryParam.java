@@ -19,7 +19,7 @@ public class EmployeeProductQueryParam extends BaseQueryParam {
     /**
      * 商品id
      */
-    Set<Integer> productIds;
+    Set<String> productIds;
 
     /**
      * sku编码

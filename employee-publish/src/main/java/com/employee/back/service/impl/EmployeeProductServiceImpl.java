@@ -19,6 +19,7 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * @author Tanlian
@@ -32,11 +33,17 @@ public class EmployeeProductServiceImpl implements EmployeeProductService {
     private EmployeeProductDAO employeeProductDAO;
 
     @Override
-    public ResultDTO<Void> save(List<EmployeeProductDTO> proudctDTOs) {
+    public ResultDTO<Void> saveOrUpdate(List<EmployeeProductDTO> proudctDTOs) {
         List<EmployeeProductEntity> productEntities = Lists2.transform(proudctDTOs, EmployeeProductTransformers.DTO_TO_ENTITY);
-        int affectedRows= employeeProductDAO.save(productEntities);
-            log.info("添加商品:{}",affectedRows);
-            return ResultDTO.successfy();
+        Set<Integer> employeeProductIds = productEntities.stream().map(EmployeeProductEntity::getEmployeeProductId).collect(Collectors.toSet());
+        if (CollectionUtils.isEmpty(employeeProductIds)) {
+            int affectedRows = employeeProductDAO.save(productEntities);
+            log.info("添加商品:{}", affectedRows);
+        }
+        EmployeeProductEntity employeeProductEntity = productEntities.get(0);
+//        EmployeeProductEntity productEntity = productEntities.iterator().next();
+        employeeProductDAO.update(employeeProductEntity);
+        return ResultDTO.successfy();
     }
 
     @Override
@@ -44,8 +51,8 @@ public class EmployeeProductServiceImpl implements EmployeeProductService {
         if (CollectionUtils.isEmpty(employeeProductIds)) {
             return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "employeeProductIds is empty");
         }
-       int affectedRows = employeeProductDAO.delete(employeeProductIds);
-        log.info("删除商品:{}",affectedRows);
+        int affectedRows = employeeProductDAO.delete(employeeProductIds);
+        log.info("删除商品:{}", affectedRows);
         return ResultDTO.successfy();
     }
 
@@ -54,7 +61,6 @@ public class EmployeeProductServiceImpl implements EmployeeProductService {
         if (queryParam == null) {
             return PageModel.emptyModel();
         }
-
         List<EmployeeProductEntity> productEntities = employeeProductDAO.query(queryParam);
         List<EmployeeProductDTO> productDTOs = Lists.newArrayList();
         for (EmployeeProductEntity productEntity : productEntities) {
@@ -62,6 +68,6 @@ public class EmployeeProductServiceImpl implements EmployeeProductService {
             productDTOs.add(productDTO);
         }
         int count = employeeProductDAO.count(queryParam);
-        return PageModel.build(productDTOs,count);
+        return PageModel.build(productDTOs, count);
     }
 }

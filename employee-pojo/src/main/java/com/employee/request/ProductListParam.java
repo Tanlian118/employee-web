@@ -19,7 +19,7 @@ public class ProductListParam extends BaseQueryParam {
     /**
      * 商品id
      */
-    Set<Integer> ProductIds;
+    Set<String> ProductIds;
 
     /**
      * sku编码

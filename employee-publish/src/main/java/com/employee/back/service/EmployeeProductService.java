@@ -16,7 +16,7 @@ import java.util.Set;
 public interface EmployeeProductService {
 
 
-    ResultDTO<Void> save(List<EmployeeProductDTO> employeeProductDTOs);
+    ResultDTO<Void> saveOrUpdate(List<EmployeeProductDTO> employeeProductDTOs);
 
 
     ResultDTO<Void> delete(Set<Integer> employeeProductIds);
