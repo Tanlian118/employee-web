@@ -22,6 +22,10 @@
             <groupId>com.product</groupId>
             <artifactId>product-service-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.tan</groupId>
+            <artifactId>order-service-api</artifactId>
+        </dependency>
 
         <!-- Mybatis -->
         <dependency>

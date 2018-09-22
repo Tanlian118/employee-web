@@ -5,5 +5,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:reference id="productQueryService" interface="com.product.service.ProductQueryService" version="1.0.0" timeout="5000"/>
+    <dubbo:reference id="employeeOrderService" interface="com.tan.service.EmployeeOrderService" version="1.0.0" timeout="5000"/>
 </beans>
