@@ -9,7 +9,7 @@
 *.jar
 *.war
 *.ear
-.idea/*
+*.idea/
 *.iml
 */target/
 target/
