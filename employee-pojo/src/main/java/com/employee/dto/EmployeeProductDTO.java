@@ -52,4 +52,11 @@ public class EmployeeProductDTO {
      */
     Integer weight;
 
+    /**
+     * 库存数量
+     */
+    Integer stockCount;
+
+
+
 }

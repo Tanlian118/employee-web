@@ -6,4 +6,5 @@
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:reference id="productQueryService" interface="com.product.service.ProductQueryService" version="1.0.0" timeout="5000"/>
+    <dubbo:reference id="productStockService" interface="com.product.service.ProductStockService" version="1.0.0" timeout="5000"/>
 </beans>
