@@ -7,4 +7,5 @@
 
     <dubbo:reference id="productQueryService" interface="com.product.service.ProductQueryService" version="1.0.0" timeout="5000"/>
     <dubbo:reference id="productStockService" interface="com.product.service.ProductStockService" version="1.0.0" timeout="5000"/>
+    <dubbo:reference id="employeeOrderService" interface="com.tan.service.EmployeeOrderService" version="1.0.0" timeout="5000"/>
 </beans>
