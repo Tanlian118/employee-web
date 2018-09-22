@@ -16,7 +16,7 @@ public class EmployeeAddRequest {
     /**
      * 员工Id
      */
-    Integer employeeUserId;
+    String uid;
 
     /**
      * 姓名

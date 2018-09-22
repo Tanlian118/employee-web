@@ -32,4 +32,14 @@ public class ProductVO {
      * 商品主图
      */
     String productImage;
+
+    /**
+     * 商品价格
+     */
+    Integer productPrice;
+
+    /**
+     * 权重
+     */
+    Integer weight;
 }

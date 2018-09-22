@@ -16,8 +16,8 @@ import java.util.Set;
  **/
 public interface EmployeeDAO {
 
-    @Insert({"INSERT INTO employee_user(employee_user_id, username, phone, password, public_key)",
-            "VALUES(#{entity.employeeUserId}, #{entity.username}, #{entity.phone},",
+    @Insert({"INSERT INTO employee_user(uid, username, phone, password, public_key)",
+            "VALUES(#{entity.uid}, #{entity.username}, #{entity.phone},",
             "#{entity.password}, #{entity.publicKey})"})
     int add(@Param("entity") EmployeeEntity employeeEntity);
 

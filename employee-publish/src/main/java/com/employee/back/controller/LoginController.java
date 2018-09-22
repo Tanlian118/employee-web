@@ -1,6 +1,8 @@
 package com.employee.back.controller;
 
 import com.employee.back.service.EmployeeService;
+import com.employee.common.util.AESUtil;
+import com.employee.common.util.SessionUtil;
 import com.employee.dto.EmployeeDTO;
 import com.employee.param.EmployeeQueryParam;
 import com.employee.vo.EmployeeVO;
@@ -15,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -29,7 +33,8 @@ public class LoginController {
     private EmployeeService employeeService;
 
     @RequestMapping(value = "login",method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResultDTO<EmployeeVO> login(@RequestParam String username, @RequestParam String password) {
+    public ResultDTO<EmployeeVO> login(@RequestParam String username, @RequestParam String password,
+                                       HttpServletRequest request, HttpServletResponse response) {
         if (!StringUtils.hasText(username) || !StringUtils.hasText(password)) {
             return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "请输入用户名和密码");
         }
@@ -39,6 +44,15 @@ public class LoginController {
         if (CollectionUtils.isEmpty(employeeDTOs)) {
             return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "用户不存在");
         }
+        EmployeeDTO employeeDTO = employeeDTOs.get(0);
+        String passwordFromDB = employeeDTO.getPassword();
+        String publickey = employeeDTO.getPublicKey();
+        String encryPassword = AESUtil.encrypt(password, publickey);
+        if (!encryPassword.equals(passwordFromDB)) {
+                return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "密码次数错误过多," + 60 + "分钟后重试");
+            }
+        String employeeUserId = employeeDTO.getUid();
+        SessionUtil.addCookie(request, response, employeeUserId);
         return ResultDTO.successfy();
     }
 

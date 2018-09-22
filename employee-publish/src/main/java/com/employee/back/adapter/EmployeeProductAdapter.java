@@ -64,20 +64,6 @@ public class EmployeeProductAdapter {
     }
 
     public PageModel<ProductVO> listProduct(ProductListParam listParam) {
-        EmployeeProductQueryParam queryParam = new EmployeeProductQueryParam();
-        queryParam.setNeedPagination(true);
-        int pageSize = FixedPageSizeEnum.getByPageSize(listParam.getPageSize()).getPageSize();
-        queryParam.setPage(listParam.getPage() * pageSize);
-        queryParam.setPageSize(pageSize);
-        queryParam.setProductCode(listParam.getProductCode());
-        queryParam.setProductName(listParam.getProductName());
-        PageModel<EmployeeProductDTO> pageModel = employeeProductService.queryByParam(queryParam);
-        List<EmployeeProductDTO> productDTOs = pageModel.getData();
-        List<ProductVO> productVOs = Lists2.transform(productDTOs, EmployeeProductTransformers.DTO_TO_PRODUCT_VO);
-        return PageModel.build(productVOs, pageModel.getTotalCount(), listParam.getPage(), pageSize);
-    }
-
-    public PageModel<ProductVO> listEmployeeProduct(EmployeeProductListParam listParam) {
         //传入查询参数
         ProductQueryParam queryParam = new ProductQueryParam();
         queryParam.setNeedPagination(true);
@@ -94,6 +80,20 @@ public class EmployeeProductAdapter {
         }
         List<ProductVO> productVOs = Lists2.transform(productDTOs, EmployeeProductTransformers.PRODUCT_DTO_TO_VO);
         //将商品列表返回controller
+        return PageModel.build(productVOs, pageModel.getTotalCount(), listParam.getPage(), pageSize);
+    }
+
+    public PageModel<ProductVO> listEmployeeProduct(EmployeeProductListParam listParam) {
+        EmployeeProductQueryParam queryParam = new EmployeeProductQueryParam();
+        queryParam.setNeedPagination(true);
+        int pageSize = FixedPageSizeEnum.getByPageSize(listParam.getPageSize()).getPageSize();
+        queryParam.setPage(listParam.getPage() * pageSize);
+        queryParam.setPageSize(pageSize);
+        queryParam.setProductCode(listParam.getProductCode());
+        queryParam.setProductName(listParam.getProductName());
+        PageModel<EmployeeProductDTO> pageModel = employeeProductService.queryByParam(queryParam);
+        List<EmployeeProductDTO> productDTOs = pageModel.getData();
+        List<ProductVO> productVOs = Lists2.transform(productDTOs, EmployeeProductTransformers.DTO_TO_PRODUCT_VO);
         return PageModel.build(productVOs, pageModel.getTotalCount(), listParam.getPage(), pageSize);
     }
 }

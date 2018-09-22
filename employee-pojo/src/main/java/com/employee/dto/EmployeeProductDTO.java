@@ -47,4 +47,9 @@ public class EmployeeProductDTO {
      */
     Integer productPrice;
 
+    /**
+     * 权重
+     */
+    Integer weight;
+
 }

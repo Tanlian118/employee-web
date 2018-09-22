@@ -1,9 +1,11 @@
 com\employee\back\adapter\EmployeeAdapter.class
 com\employee\back\transformers\EmployeeProductTransformers.class
 com\employee\common\util\CookieUtils.class
+com\employee\front\controller\HomeController.class
 com\employee\back\transformers\EmployeeTransformers.class
 com\employee\back\dao\EmployeeDAO.class
 com\employee\back\controller\EmployeeProductController.class
+com\employee\front\adapter\HomeAdapter.class
 com\employee\common\util\AESUtil.class
 com\employee\common\util\SessionUtil.class
 com\employee\common\handler\MyBatisEnumTypeHandler.class

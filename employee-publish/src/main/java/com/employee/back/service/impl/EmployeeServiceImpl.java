@@ -33,12 +33,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public ResultDTO<Void> addOrUpdateUser(EmployeeDTO employeeDTO) {
         EmployeeEntity employeeEntity = BaseTransformer.convert(employeeDTO, new EmployeeEntity());
-        if (employeeEntity.getEmployeeUserId() == null) {
             employeeDAO.add(employeeEntity);
             return ResultDTO.successfy();
-        }
-        employeeDAO.update(employeeEntity);
-        return ResultDTO.successfy();
     }
 
     @Override

@@ -2,6 +2,8 @@ package com.employee.back.adapter;
 
 import com.employee.back.service.EmployeeService;
 import com.employee.back.transformers.EmployeeTransformers;
+import com.employee.common.util.AESUtil;
+import com.employee.common.util.SessionUtil;
 import com.employee.dto.EmployeeDTO;
 import com.employee.param.EmployeeQueryParam;
 import com.employee.request.EmployeeAddRequest;
@@ -9,7 +11,6 @@ import com.employee.request.EmployeeListParam;
 import com.employee.vo.EmployeeVO;
 import com.tan.kit.constant.FixedPageSizeEnum;
 import com.tan.kit.constant.StateCode;
-import com.tan.kit.converter.BaseTransformer;
 import com.tan.kit.dto.PageModel;
 import com.tan.kit.dto.ResultDTO;
 import com.tan.kit.guava2.Lists2;
@@ -21,6 +22,7 @@ import org.springframework.util.StringUtils;
 
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 
 /**
  * @author Tanlian
@@ -34,6 +36,30 @@ public class EmployeeAdapter {
     private EmployeeService employeeService;
 
     public ResultDTO<Void> saveOrEditUser(EmployeeAddRequest addRequest) {
+        ResultDTO<Void> resultDTO = getEmployeeRequest(addRequest);
+        if (!resultDTO.isSuccess()) {
+            return resultDTO;
+        }
+        EmployeeQueryParam queryParam = new EmployeeQueryParam();
+        queryParam.setUsername(addRequest.getUsername());
+        List<EmployeeDTO> employeeDTOs = employeeService.queryByParam(queryParam).getData();
+        if (!CollectionUtils.isEmpty(employeeDTOs)) {
+            return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "用户已存在");
+        }
+        EmployeeDTO employeeDTO = new EmployeeDTO();
+        employeeDTO.setUsername(addRequest.getUsername());
+        employeeDTO.setPhone(addRequest.getPhone());
+        employeeDTO.setPublicKey(SessionUtil.PUBLIC_KEY);
+        String password = addRequest.getPassword();
+        String encryptPassword = AESUtil.encrypt(password, SessionUtil.PUBLIC_KEY);
+        employeeDTO.setPassword(encryptPassword);
+        String uuid = UUID.randomUUID().toString();
+        employeeDTO.setUid(uuid.replace("-",""));
+        employeeService.addOrUpdateUser(employeeDTO);
+        return ResultDTO.successfy();
+    }
+
+    private ResultDTO<Void> getEmployeeRequest(EmployeeAddRequest addRequest) {
         if (addRequest == null) {
             return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "请输入相关信息");
         }
@@ -47,9 +73,9 @@ public class EmployeeAdapter {
         if (!StringUtils.hasText(phone) || phone.length() > 11) {
             return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "请输入11位手机号");
         }
-        EmployeeDTO employeeDTO = BaseTransformer.convert(addRequest, new EmployeeDTO());
-        employeeService.addOrUpdateUser(employeeDTO);
-
+        if (!StringUtils.hasText(addRequest.getPassword())) {
+            return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "请输入用户密码");
+        }
         return ResultDTO.successfy();
     }
 

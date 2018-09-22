@@ -14,10 +14,10 @@ public class SessionUtil {
     public static final int COOKIE_EXPIRE_SECOND = 60 * 60;
     public static final String PUBLIC_KEY = "39D9625FABD93D46561871240D6624C5";
 
-    public static void addCookie(HttpServletRequest request, HttpServletResponse response, String useId) {
-        CookieUtils cookieUtils = new CookieUtils(request, response, useId);
+    public static void addCookie(HttpServletRequest request, HttpServletResponse response, String employeeUserId) {
+        CookieUtils cookieUtils = new CookieUtils(request, response, employeeUserId);
         cookieUtils.setExpireTimeBySeconds(COOKIE_EXPIRE_SECOND);
-        String decryptId = AESUtil.decrypt(useId + "|" + System.currentTimeMillis() / 1000, PUBLIC_KEY);
+        String decryptId = AESUtil.decrypt(employeeUserId + "|" + System.currentTimeMillis() / 1000, PUBLIC_KEY);
         cookieUtils.addCookie(EMPLOYEE_KEY, decryptId);
     }
 

@@ -28,13 +28,13 @@ public interface EmployeeProductDAO {
     int save(@Param("entities") List<EmployeeProductEntity> employeeProductEntities);
 
     @Update({"UPDATE employee_product",
-            "SET  product_price=#{entity.productPrice},weight=#{weight}",
+            "SET product_code=#{productCode}, product_price=#{entity.productPrice}, weight=#{weight}",
             "WHERE status = 1 AND type = 0"
     })
     int update(@Param("entity") EmployeeProductEntity employeeProductEntity);
 
     @Select({"<script>",
-            "SELECT product_id, product_code, product_name,product_subtitle, product_image",
+            "SELECT product_id, product_code, product_name,product_subtitle, product_image, product_price, weight",
             "FROM employee_product",
             "WHERE status = 1",
             "<if test='productCode!= null'>",
@@ -43,7 +43,7 @@ public interface EmployeeProductDAO {
             "<if test='productName!= null'>",
             "AND product_name LIKE CONCAT('%', #{productName},'%')",
             "</if>",
-            "ORDER BY product_code DESC",
+            "ORDER BY weight DESC",
             "<if test='needPagination == true'>",
             "LIMIT #{page},#{pageSize}",
             "</if>",
@@ -61,7 +61,7 @@ public interface EmployeeProductDAO {
             "<if test='productName!= null'>",
             "AND product_name LIKE CONCAT('%', #{productName},'%')",
             "</if>",
-            "ORDER BY product_code DESC",
+            "ORDER BY weight DESC",
             "</script>"
     })
     int count(EmployeeProductQueryParam queryParam);
@@ -74,4 +74,6 @@ public interface EmployeeProductDAO {
             "</foreach>",
             "</script>"})
     int delete(Set<Integer> employeeProductIds);
+
+
 }

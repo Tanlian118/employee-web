@@ -19,7 +19,7 @@ public class EmployeeDTO {
     /**
      * 员工id
      */
-   Integer employeeUserId;
+   String uid;
 
     /**
      * 姓名

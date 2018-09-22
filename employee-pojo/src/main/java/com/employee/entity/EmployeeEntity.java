@@ -21,6 +21,11 @@ public class EmployeeEntity {
     Integer employeeUserId;
 
     /**
+     *  uid
+     */
+    String uid;
+
+    /**
      * 姓名
      */
     String username;
