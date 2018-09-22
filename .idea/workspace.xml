@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a0016a1-39a8-4503-afcb-059d0a0fedda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="7a0016a1-39a8-4503-afcb-059d0a0fedda" name="Default" comment="" />
     <ignored path="employee-web.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,8 +39,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="198">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -336,9 +333,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,10 +349,12 @@
     <property name="SearchEverywhereHistoryKey" value="stacode&#9;FILE&#9;file://E:/IntelliJIDEA2/employee-web/employee-pojo/src/main/java/com/employee/common/constant/StateCode.java&#10;enumhan&#9;FILE&#9;jar://D:/.m2/repository/org/mybatis/mybatis/3.4.5/mybatis-3.4.5.jar!/org/apache/ibatis/type/EnumOrdinalTypeHandler.class&#10;employeeController&#9;FILE&#9;file://E:/IntelliJIDEA2/employee-web/employee-publish/src/main/java/com/employee/back/controller/EmployeeController.java&#10;sta&#9;FILE&#9;file://E:/IntelliJIDEA2/employee-web/employee-pojo/src/main/java/com/employee/common/constant/StatusCode.java&#10;enumor&#9;PSI&#9;JAVA://org.apache.ibatis.type.EnumOrdinalTypeHandler&#10;EmployeeServiceImpl&#9;FILE&#9;file://E:/IntelliJIDEA2/employee-web/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeServiceImpl.java&#10;employeeService&#9;FILE&#9;file://E:/IntelliJIDEA2/employee-web/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeServiceImpl.java" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IntelliJIDEA2\employee-web" />
-      <recent name="E:\IntelliJIDEA2\employee-web\employee-publish\src\main\java\com\employee" />
-      <recent name="E:\IntelliJIDEA2\employee-web\employee-pojo\src\main\java\com\employee\common" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.employee.back.service" />
+      <recent name="com.employee.back.controller" />
+      <recent name="com.employee.back.dao" />
+      <recent name="com.employee.back.service.impl" />
+      <recent name="com.employee.back.adapter" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.employee.request" />
@@ -364,12 +363,10 @@
       <recent name="com.employee.entity" />
       <recent name="com.employee.back.transformers" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.employee.back.service" />
-      <recent name="com.employee.back.controller" />
-      <recent name="com.employee.back.dao" />
-      <recent name="com.employee.back.service.impl" />
-      <recent name="com.employee.back.adapter" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IntelliJIDEA2\employee-web" />
+      <recent name="E:\IntelliJIDEA2\employee-web\employee-publish\src\main\java\com\employee" />
+      <recent name="E:\IntelliJIDEA2\employee-web\employee-pojo\src\main\java\com\employee\common" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -560,7 +557,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1934" height="1042" extended-state="0" />
+    <frame x="-11" y="-11" width="1934" height="1042" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -645,7 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,9 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
           <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,7 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="21" column="125" selection-start-line="21" selection-start-column="125" selection-end-line="21" selection-end-column="125" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="946">
           <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,8 +969,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="198">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding />
         </state>
       </provider>
