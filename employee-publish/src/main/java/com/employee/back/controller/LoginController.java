@@ -55,5 +55,4 @@ public class LoginController {
         SessionUtil.addCookie(request, response, employeeUserId);
         return ResultDTO.successfy();
     }
-
 }
