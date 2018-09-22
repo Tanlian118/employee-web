@@ -11,6 +11,7 @@
 *.ear
 .idea/*
 *.iml
+*.ideal/
 */target/
 target/
 rebel.xml

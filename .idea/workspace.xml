@@ -2,62 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a0016a1-39a8-4503-afcb-059d0a0fedda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/front/adapter/HomeAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/front/controller/HomeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee-publish/src/main/resources/redis.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee-publish/src/main/resources/spring-redis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/dto/EmployeeDTO.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/dto/EmployeeDTO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/dto/EmployeeProductDTO.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/dto/EmployeeProductDTO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/entity/EmployeeEntity.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/entity/EmployeeEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/entity/EmployeeProductEntity.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/entity/EmployeeProductEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/EmployeeAddRequest.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/EmployeeAddRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/EmployeeProductListParam.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/EmployeeProductListParam.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/ProductAddRequest.class" afterPath="$PROJECT_DIR$/employee-pojo/target/classes/com/employee/request/ProductAddRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/employee-pojo-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/employee-pojo/target/employee-pojo-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/adapter/EmployeeAdapter.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/adapter/EmployeeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/adapter/EmployeeProductAdapter.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/adapter/EmployeeProductAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/controller/EmployeeProductController.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/controller/EmployeeProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/controller/LoginController.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/dao/EmployeeDAO.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/dao/EmployeeDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/dao/EmployeeProductDAO.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/dao/EmployeeProductDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/EmployeeProductService.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/EmployeeProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/impl/EmployeeProductServiceImpl.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/impl/EmployeeProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/impl/EmployeeServiceImpl.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/service/impl/EmployeeServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/transformers/EmployeeProductTransformers.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/back/transformers/EmployeeProductTransformers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/common/util/SessionUtil.class" afterPath="$PROJECT_DIR$/employee-publish/target/classes/com/employee/common/util/SessionUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/adapter/EmployeeAdapter.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/adapter/EmployeeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/adapter/EmployeeProductAdapter.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/adapter/EmployeeProductAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/controller/EmployeeProductController.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/controller/EmployeeProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/controller/LoginController.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/dao/EmployeeDAO.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/dao/EmployeeDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/dao/EmployeeProductDAO.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/dao/EmployeeProductDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/EmployeeProductService.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/EmployeeProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/impl/EmployeeProductServiceImpl.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/impl/EmployeeProductServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/impl/EmployeeServiceImpl.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/service/impl/EmployeeServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/transformers/EmployeeProductTransformers.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/back/transformers/EmployeeProductTransformers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/common/util/SessionUtil.class" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/classes/com/employee/common/util/SessionUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/lib/employee-pojo-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/employee-publish/target/employee-publish-1.0-SNAPSHOT/WEB-INF/lib/employee-pojo-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeDTO.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeProductDTO.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/dto/EmployeeProductDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeEntity.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeAddRequest.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeAddRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeProductListParam.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/request/EmployeeProductListParam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/ProductVO.java" afterPath="$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/vo/ProductVO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-pojo/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/employee-pojo/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeAdapter.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeProductAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/EmployeeProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/LoginController.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeDAO.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeProductDAO.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeProductDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeProductService.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/EmployeeProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeServiceImpl.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/EmployeeServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/util/SessionUtil.java" afterPath="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/common/util/SessionUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/employee-publish/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/employee-publish/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee-publish/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/employee-publish/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="employee-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmployeeAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="313">
@@ -110,6 +56,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,18 +140,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/employee-pojo/src/main/java/com/employee/entity/EmployeeEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -228,7 +172,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/OrderProductAdapter.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/../product-web/product-web-publish/src/main/java/com/product/service/ProductQueryService.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/ProductDAO.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/service/impl/ProductServiceImpl.java" />
@@ -278,6 +221,7 @@
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/front/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/front/adapter/HomeAdapter.java" />
         <option value="$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeAdapter.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -885,7 +829,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="0" width="1934" height="1042" extended-state="1" />
+    <frame x="-11" y="0" width="1934" height="1042" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -898,7 +842,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32962963" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.4978425" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.248104" sideWeight="0.49506173" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.283857" sideWeight="0.49506173" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23193096" sideWeight="0.50823045" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32955772" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -944,16 +888,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/dao/EmployeeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/employee-publish/src/main/java/com/employee/back/adapter/EmployeeAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -1339,6 +1273,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
