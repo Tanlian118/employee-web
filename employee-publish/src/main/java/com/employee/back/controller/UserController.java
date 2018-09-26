@@ -1,9 +1,9 @@
 package com.employee.back.controller;
 
-import com.employee.back.adapter.EmployeeAdapter;
-import com.employee.request.EmployeeAddRequest;
-import com.employee.request.EmployeeListParam;
-import com.employee.vo.EmployeeVO;
+import com.employee.back.adapter.UserAdapter;
+import com.employee.request.UserAddRequest;
+import com.employee.request.UserListParam;
+import com.employee.vo.UserVO;
 import com.tan.kit.dto.PageModel;
 import com.tan.kit.dto.ResultDTO;
 import lombok.extern.slf4j.Slf4j;
@@ -17,31 +17,28 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Set;
 
 /**
+ * 员工列表controller
  * @author Tanlian
  * @create 2018-09-15 22:06
  **/
 @Slf4j
 @RestController
 @RequestMapping("/em/")
-public class EmployeeController {
+public class UserController {
 
     @Autowired
-    private EmployeeAdapter employeeAdapter;
+    private UserAdapter employeeAdapter;
 
     /**
      * 添加用户
-     * @param employeeAddRequest
-     * @return
      */
     @RequestMapping(value = "save", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResultDTO<Void> saveOrEdit(@RequestBody EmployeeAddRequest employeeAddRequest) {
+    public ResultDTO<Void> saveOrEdit(@RequestBody UserAddRequest employeeAddRequest) {
         return employeeAdapter.saveOrEditUser(employeeAddRequest);
     }
 
     /**
      * 禁用用户
-     * @param employeeUserIds
-     * @return
      */
     @RequestMapping(value = "update", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResultDTO<Void> update(@RequestBody Set<Integer> employeeUserIds) {
@@ -50,11 +47,9 @@ public class EmployeeController {
 
     /**
      * 查询用户列表
-     * @param employeeListParam
-     * @return
      */
     @RequestMapping(value = "list", method = RequestMethod.GET)
-    public PageModel<EmployeeVO> list(EmployeeListParam employeeListParam) {
+    public PageModel<UserVO> list(UserListParam employeeListParam) {
         return employeeAdapter.list(employeeListParam);
     }
 

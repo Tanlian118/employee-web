@@ -1,7 +1,6 @@
 package com.employee.vo;
 
-import lombok.AccessLevel;
-import lombok.Data;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 /**
@@ -9,6 +8,9 @@ import lombok.experimental.FieldDefaults;
  * @create 2018-09-20 0:32
  **/
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ProductVO {
 

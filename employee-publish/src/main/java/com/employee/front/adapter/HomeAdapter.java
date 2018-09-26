@@ -36,6 +36,7 @@ public class HomeAdapter {
         if (CollectionUtils.isEmpty(productDTOs)) {
             return Collections.emptyList();
         }
+
         fillProductStockInfo(productDTOs);
         return productDTOs;
     }
@@ -48,6 +49,9 @@ public class HomeAdapter {
                 .map(EmployeeProductDTO::getProductId)
                 .collect(Collectors.toSet());
         List<ProductStockDTO> productStockDTOs = productStockService.queryByProductIds(productIds);
+        if (CollectionUtils.isEmpty(productDTOs)) {
+            return;
+        }
         Map<String, Integer> productIdAndStockCountMap = productStockDTOs.stream()
                 .collect(Collectors.toMap(ProductStockDTO::getProductId, ProductStockDTO::getStockCount));
         productDTOs.forEach(v->v.setStockCount(productIdAndStockCountMap.get(v.getProductId())));

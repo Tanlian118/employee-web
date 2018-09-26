@@ -22,6 +22,11 @@ public class HomeController {
     @Autowired
     private HomeAdapter homeAdapter;
 
+    /**
+     * 查询商品列表
+     * @param productIds
+     * @return
+     */
     @RequestMapping(value = "list", method = RequestMethod.GET)
     public List<EmployeeProductDTO> list(@RequestParam Set<String> productIds) {
         return homeAdapter.employeeProductList(productIds);

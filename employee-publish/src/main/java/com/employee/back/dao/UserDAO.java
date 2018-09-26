@@ -1,7 +1,7 @@
 package com.employee.back.dao;
 
-import com.employee.entity.EmployeeEntity;
-import com.employee.param.EmployeeQueryParam;
+import com.employee.entity.UserEntity;
+import com.employee.param.UserQueryParam;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -14,18 +14,18 @@ import java.util.Set;
  * @author Tanlian
  * @create 2018-09-16 12:06
  **/
-public interface EmployeeDAO {
+public interface UserDAO {
 
     @Insert({"INSERT INTO employee_user(uid, username, phone, password, public_key)",
             "VALUES(#{entity.uid}, #{entity.username}, #{entity.phone},",
             "#{entity.password}, #{entity.publicKey})"})
-    int add(@Param("entity") EmployeeEntity employeeEntity);
+    int add(@Param("entity") UserEntity employeeEntity);
 
     @Update({"UPDATE employee_user",
             "SET username=#{entity.username}, phone=#{entity.phone}",
             "WHERE status = 1",
-            })
-    int update(@Param("entity") EmployeeEntity employeeEntity);
+    })
+    int update(@Param("entity") UserEntity employeeEntity);
 
     @Update({"<script>",
             "UPDATE employee_user SET status= 0",
@@ -46,18 +46,28 @@ public interface EmployeeDAO {
             "<if test='phone!= null'>",
             "AND phone LIKE CONCAT('%', #{phone},'%')",
             "</if>",
+            "<if test='uids != null and uids.size() > 0 '>",
+            "<foreach item='uid' collection='uids' open='AND uid IN(' separator=',' close=')'>",
+            "#{uid}",
+            "</foreach>",
+            "</if>",
             "ORDER BY create_time DESC",
             "<if test='needPagination == true'>",
             "LIMIT #{page},#{pageSize}",
             "</if>",
             "</script>"
     })
-    List<EmployeeEntity> query(EmployeeQueryParam queryParam);
+    List<UserEntity> query(UserQueryParam queryParam);
 
     @Select({"<script>",
             "SELECT count(1)",
             "FROM employee_user",
             "WHERE status IN(0,1)",
+            "<if test='uids != null and uids.size() > 0 '>",
+            "<foreach item='uid' collection='uids' open='AND uid IN(' separator=',' close=')'>",
+            "#{uid}",
+            "</foreach>",
+            "</if>",
             "<if test='username != null'>",
             "AND username LIKE CONCAT('%',#{username},'%')",
             "</if>",
@@ -67,5 +77,5 @@ public interface EmployeeDAO {
             "ORDER BY create_time DESC",
             "</script>"
     })
-    int count(EmployeeQueryParam queryParam);
+    int count(UserQueryParam queryParam);
 }

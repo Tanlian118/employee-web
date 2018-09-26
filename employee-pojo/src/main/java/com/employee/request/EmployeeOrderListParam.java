@@ -1,32 +1,37 @@
 package com.employee.request;
 
-import com.tan.kit.constant.StatusCode;
 import com.tan.kit.param.BaseQueryParam;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
+import java.util.Set;
+
 /**
  * @author Tanlian
- * @create 2018-09-15 22:10
+ * @create 2018-09-23 17:29
  **/
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class EmployeeListParam extends BaseQueryParam {
+public class EmployeeOrderListParam extends BaseQueryParam{
+
+    /**
+     * 订单编号
+     */
+    Set<String> orderNos;
+
+    /**
+     * 用户id
+     */
+    Set<String> uids;
 
     /**
      * 姓名
      */
-    String username;
+    Set<String> usernames;
 
     /**
-     * 手机号码
+     * 手机号
      */
-    String phone;
-
-    /**
-     * 状态：-1/0/1 -> 删除/禁用/正常
-     */
-    StatusCode status;
-
+    Set<String> phones;
 }

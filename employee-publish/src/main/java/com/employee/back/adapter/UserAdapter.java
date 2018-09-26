@@ -1,14 +1,15 @@
 package com.employee.back.adapter;
 
-import com.employee.back.service.EmployeeService;
-import com.employee.back.transformers.EmployeeTransformers;
+import com.employee.back.service.UserService;
+import com.employee.back.transformers.UserTransformers;
 import com.employee.common.util.AESUtil;
 import com.employee.common.util.SessionUtil;
-import com.employee.dto.EmployeeDTO;
-import com.employee.param.EmployeeQueryParam;
-import com.employee.request.EmployeeAddRequest;
-import com.employee.request.EmployeeListParam;
-import com.employee.vo.EmployeeVO;
+import com.employee.dto.UserDTO;
+import com.employee.param.UserQueryParam;
+import com.employee.request.UserAddRequest;
+import com.employee.request.UserListParam;
+import com.employee.vo.UserVO;
+import com.google.common.collect.Sets;
 import com.tan.kit.constant.FixedPageSizeEnum;
 import com.tan.kit.constant.StateCode;
 import com.tan.kit.dto.PageModel;
@@ -30,23 +31,23 @@ import java.util.UUID;
  **/
 @Slf4j
 @Service("employeeAdapter")
-public class EmployeeAdapter {
+public class UserAdapter {
 
     @Autowired
-    private EmployeeService employeeService;
+    private UserService employeeService;
 
-    public ResultDTO<Void> saveOrEditUser(EmployeeAddRequest addRequest) {
+    public ResultDTO<Void> saveOrEditUser(UserAddRequest addRequest) {
         ResultDTO<Void> resultDTO = getEmployeeRequest(addRequest);
         if (!resultDTO.isSuccess()) {
             return resultDTO;
         }
-        EmployeeQueryParam queryParam = new EmployeeQueryParam();
+        UserQueryParam queryParam = new UserQueryParam();
         queryParam.setUsername(addRequest.getUsername());
-        List<EmployeeDTO> employeeDTOs = employeeService.queryByParam(queryParam).getData();
+        List<UserDTO> employeeDTOs = employeeService.queryByParam(queryParam).getData();
         if (!CollectionUtils.isEmpty(employeeDTOs)) {
             return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "用户已存在");
         }
-        EmployeeDTO employeeDTO = new EmployeeDTO();
+        UserDTO employeeDTO = new UserDTO();
         employeeDTO.setUsername(addRequest.getUsername());
         employeeDTO.setPhone(addRequest.getPhone());
         employeeDTO.setPublicKey(SessionUtil.PUBLIC_KEY);
@@ -59,7 +60,7 @@ public class EmployeeAdapter {
         return ResultDTO.successfy();
     }
 
-    private ResultDTO<Void> getEmployeeRequest(EmployeeAddRequest addRequest) {
+    private ResultDTO<Void> getEmployeeRequest(UserAddRequest addRequest) {
         if (addRequest == null) {
             return ResultDTO.fail(StateCode.ILLEGAL_ARGS, "请输入相关信息");
         }
@@ -87,20 +88,21 @@ public class EmployeeAdapter {
         return ResultDTO.successfy();
     }
 
-    public PageModel<EmployeeVO> list(EmployeeListParam listParam) {
+    public PageModel<UserVO> list(UserListParam listParam) {
         if (listParam == null) {
             return PageModel.emptyModel();
         }
-        EmployeeQueryParam queryParam = new EmployeeQueryParam();
+        UserQueryParam queryParam = new UserQueryParam();
         int pageSize = FixedPageSizeEnum.getByPageSize(listParam.getPageSize()).getPageSize();
         queryParam.setPage(listParam.getPage() * pageSize);
         queryParam.setPageSize(pageSize);
         queryParam.setNeedPagination(true);
         queryParam.setUsername(listParam.getUsername());
         queryParam.setPhone(listParam.getPhone());
-        PageModel<EmployeeDTO> pageModel = employeeService.queryByParam(queryParam);
-        List<EmployeeDTO> employeeDTOs = pageModel.getData();
-        List<EmployeeVO> employeeVOs = Lists2.transform(employeeDTOs, EmployeeTransformers.DTO_TO_VO);
+        queryParam.setUids(Sets.newHashSet(listParam.getUid()));
+        PageModel<UserDTO> pageModel = employeeService.queryByParam(queryParam);
+        List<UserDTO> employeeDTOs = pageModel.getData();
+        List<UserVO> employeeVOs = Lists2.transform(employeeDTOs, UserTransformers.DTO_TO_VO);
         log.info("列表参数", listParam);
         return PageModel.build(employeeVOs, pageModel.getTotalCount(), listParam.getPage(), pageSize);
     }

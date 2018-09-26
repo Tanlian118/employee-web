@@ -13,7 +13,7 @@ import java.util.Date;
  **/
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class EmployeeEntity {
+public class UserEntity {
 
     /**
      *  员工id

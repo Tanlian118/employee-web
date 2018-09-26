@@ -11,7 +11,6 @@
            http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 
-
     <mvc:default-servlet-handler/>
 
     <context:component-scan base-package="com.employee.*.controller,
@@ -37,4 +36,4 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
-    </beans>
+</beans>

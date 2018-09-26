@@ -10,15 +10,15 @@ import javax.servlet.http.HttpServletResponse;
 
 public class SessionUtil {
 
-    public static final String EMPLOYEE_KEY = "COSME_SESSION";
+    public static final String EMPLOYEE_KEY = "EMPLOYEE_SESSION";
     public static final int COOKIE_EXPIRE_SECOND = 60 * 60;
     public static final String PUBLIC_KEY = "39D9625FABD93D46561871240D6624C5";
 
     public static void addCookie(HttpServletRequest request, HttpServletResponse response, String employeeUserId) {
         CookieUtils cookieUtils = new CookieUtils(request, response, employeeUserId);
         cookieUtils.setExpireTimeBySeconds(COOKIE_EXPIRE_SECOND);
-        String decryptId = AESUtil.decrypt(employeeUserId + "|" + System.currentTimeMillis() / 1000, PUBLIC_KEY);
-        cookieUtils.addCookie(EMPLOYEE_KEY, decryptId);
+        String encryptId = AESUtil.encrypt(employeeUserId + "|" + System.currentTimeMillis() / 1000, PUBLIC_KEY);
+        cookieUtils.addCookie(EMPLOYEE_KEY, encryptId);
     }
 
     public static void deleteCookie(HttpServletRequest request, HttpServletResponse response) {

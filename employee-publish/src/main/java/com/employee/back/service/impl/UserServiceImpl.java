@@ -1,11 +1,11 @@
 package com.employee.back.service.impl;
 
-import com.employee.back.dao.EmployeeDAO;
-import com.employee.back.service.EmployeeService;
-import com.employee.back.transformers.EmployeeTransformers;
-import com.employee.dto.EmployeeDTO;
-import com.employee.entity.EmployeeEntity;
-import com.employee.param.EmployeeQueryParam;
+import com.employee.back.dao.UserDAO;
+import com.employee.back.service.UserService;
+import com.employee.back.transformers.UserTransformers;
+import com.employee.dto.UserDTO;
+import com.employee.entity.UserEntity;
+import com.employee.param.UserQueryParam;
 import com.tan.kit.constant.StateCode;
 import com.tan.kit.converter.BaseTransformer;
 import com.tan.kit.dto.PageModel;
@@ -25,14 +25,14 @@ import java.util.Set;
  **/
 @Slf4j
 @Service("employeeService")
-public class EmployeeServiceImpl implements EmployeeService {
+public class UserServiceImpl implements UserService {
 
     @Autowired
-    private EmployeeDAO employeeDAO;
+    private UserDAO employeeDAO;
 
     @Override
-    public ResultDTO<Void> addOrUpdateUser(EmployeeDTO employeeDTO) {
-        EmployeeEntity employeeEntity = BaseTransformer.convert(employeeDTO, new EmployeeEntity());
+    public ResultDTO<Void> addOrUpdateUser(UserDTO employeeDTO) {
+        UserEntity employeeEntity = BaseTransformer.convert(employeeDTO, new UserEntity());
             employeeDAO.add(employeeEntity);
             return ResultDTO.successfy();
     }
@@ -47,13 +47,13 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public PageModel<EmployeeDTO> queryByParam(EmployeeQueryParam queryParam) {
+    public PageModel<UserDTO> queryByParam(UserQueryParam queryParam) {
         log.info("员工查询参数：{}",queryParam);
         if (queryParam == null) {
             return PageModel.emptyModel();
         }
-        List<EmployeeEntity> employeeEntities = employeeDAO.query(queryParam);
-        List<EmployeeDTO> employeeDTOs = Lists2.transform(employeeEntities, EmployeeTransformers.ENTITY_TO_DTO);
+        List<UserEntity> employeeEntities = employeeDAO.query(queryParam);
+        List<UserDTO> employeeDTOs = Lists2.transform(employeeEntities, UserTransformers.ENTITY_TO_DTO);
         int count = employeeDAO.count(queryParam);
         return PageModel.build(employeeDTOs, count);
 

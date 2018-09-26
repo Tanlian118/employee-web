@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
 import java.util.Date;
+import java.util.Set;
 
 /**
  * @author Tanlian
@@ -14,12 +15,17 @@ import java.util.Date;
  **/
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class EmployeeQueryParam extends BaseQueryParam {
+public class UserQueryParam extends BaseQueryParam {
 
     /**
      * 姓名
      */
     String username;
+
+    /**
+     * 用户id
+     */
+    Set<String> uids;
 
     /**
      * 手机号码

@@ -84,13 +84,14 @@ public class EmployeeProductAdapter {
     }
 
     public PageModel<ProductVO> listEmployeeProduct(EmployeeProductListParam listParam) {
-        EmployeeProductQueryParam queryParam = new EmployeeProductQueryParam();
+        EmployeeProductQueryParam queryParam = EmployeeProductQueryParam.builder()
+                .productCode(listParam.getProductCode())
+                .productName(listParam.getProductName())
+                .build();
         queryParam.setNeedPagination(true);
         int pageSize = FixedPageSizeEnum.getByPageSize(listParam.getPageSize()).getPageSize();
         queryParam.setPage(listParam.getPage() * pageSize);
         queryParam.setPageSize(pageSize);
-        queryParam.setProductCode(listParam.getProductCode());
-        queryParam.setProductName(listParam.getProductName());
         PageModel<EmployeeProductDTO> pageModel = employeeProductService.queryByParam(queryParam);
         List<EmployeeProductDTO> productDTOs = pageModel.getData();
         List<ProductVO> productVOs = Lists2.transform(productDTOs, EmployeeProductTransformers.DTO_TO_PRODUCT_VO);
