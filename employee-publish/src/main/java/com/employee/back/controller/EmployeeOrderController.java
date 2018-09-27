@@ -3,6 +3,7 @@ package com.employee.back.controller;
 import com.employee.back.adapter.EmployeeOrderAdapter;
 import com.employee.request.EmployeeOrderListParam;
 import com.employee.vo.EmployeeOrderVO;
+import com.employee.vo.OrderDetailVO;
 import com.tan.kit.dto.PageModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,8 +21,19 @@ public class EmployeeOrderController {
     @Autowired
     private EmployeeOrderAdapter employeeOrderAdapter;
 
+    /**
+     * 查询订单列表
+     */
     @RequestMapping(value = "list", method = RequestMethod.GET)
-    PageModel<EmployeeOrderVO> listOrder(EmployeeOrderListParam orderListParam) {
+  public PageModel<EmployeeOrderVO> listOrder(EmployeeOrderListParam orderListParam) {
         return employeeOrderAdapter.listOrder(orderListParam);
+    }
+
+    /**
+     * 订单详情
+     */
+    @RequestMapping(value = "orderDetails", method = RequestMethod.GET)
+   public OrderDetailVO listOrderDetail(EmployeeOrderListParam orderListParam) {
+        return employeeOrderAdapter.listOrderDetail(orderListParam);
     }
 }

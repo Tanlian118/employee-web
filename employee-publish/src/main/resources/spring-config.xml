@@ -10,6 +10,7 @@
            http://www.springframework.org/schema/mvc
            http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <context:property-placeholder location="classpath:appConfig.properties" ignore-unresolvable="true"/>
 
     <mvc:default-servlet-handler/>
 
@@ -36,4 +37,9 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
+
+    <bean id="appConfig" class="com.employee.common.config.AppConfig">
+        <property name="loginFailures" value="${user_login_failures}"/>
+        <property name="bannedSeconds" value="${user_login_bannedSeconds}"/>
+    </bean>
 </beans>

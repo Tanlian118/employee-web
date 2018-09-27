@@ -37,7 +37,7 @@ public interface UserDAO {
     int updateById(@Param("ids") Set<Integer> employeeUserIds);
 
     @Select({"<script>",
-            "SELECT username, phone, status, create_time",
+            "SELECT username, phone, password, public_key, status, create_time",
             "FROM employee_user",
             "WHERE status IN(0,1)",
             "<if test='username!= null'>",

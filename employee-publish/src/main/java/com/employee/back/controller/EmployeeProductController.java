@@ -29,8 +29,6 @@ public class EmployeeProductController {
 
     /**
      * 添加商品
-     * @param productAddRequest
-     * @return
      */
     @RequestMapping(value = "saveProduct", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResultDTO<Void> saveProduct(@RequestBody ProductAddRequest productAddRequest) {
@@ -39,8 +37,6 @@ public class EmployeeProductController {
 
     /**
      * 删除商品
-     * @param employeeProductIds
-     * @return
      */
     @RequestMapping(value = "delete", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResultDTO<Void> delete(@RequestBody Set<Integer> employeeProductIds) {
@@ -49,8 +45,6 @@ public class EmployeeProductController {
 
     /**
      * 查询商品
-     * @param listParam
-     * @return
      */
     @RequestMapping(value = "list", method = RequestMethod.GET)
     public PageModel<ProductVO> list(ProductListParam listParam) {
@@ -59,8 +53,6 @@ public class EmployeeProductController {
 
     /**
      * 商品列表
-     * @param listParam
-     * @return
      */
     @RequestMapping(value = "employeelist", method = RequestMethod.GET)
     public PageModel<ProductVO> productList(EmployeeProductListParam listParam) {

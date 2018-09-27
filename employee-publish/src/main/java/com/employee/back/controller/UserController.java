@@ -27,30 +27,30 @@ import java.util.Set;
 public class UserController {
 
     @Autowired
-    private UserAdapter employeeAdapter;
+    private UserAdapter userAdapter;
 
     /**
      * 添加用户
      */
     @RequestMapping(value = "save", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResultDTO<Void> saveOrEdit(@RequestBody UserAddRequest employeeAddRequest) {
-        return employeeAdapter.saveOrEditUser(employeeAddRequest);
+    public ResultDTO<Void> saveOrEdit(@RequestBody UserAddRequest userAddRequest) {
+        return userAdapter.saveOrEditUser(userAddRequest);
     }
 
     /**
      * 禁用用户
      */
     @RequestMapping(value = "update", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResultDTO<Void> update(@RequestBody Set<Integer> employeeUserIds) {
-        return employeeAdapter.update(employeeUserIds);
+    public ResultDTO<Void> update(@RequestBody Set<Integer> userIds) {
+        return userAdapter.update(userIds);
     }
 
     /**
      * 查询用户列表
      */
     @RequestMapping(value = "list", method = RequestMethod.GET)
-    public PageModel<UserVO> list(UserListParam employeeListParam) {
-        return employeeAdapter.list(employeeListParam);
+    public PageModel<UserVO> list(UserListParam userListParam) {
+        return userAdapter.list(userListParam);
     }
 
 }
